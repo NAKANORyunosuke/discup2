@@ -122,6 +122,8 @@ let searchFrame = null;
 const reelScrollTimers = { left: null, middle: null, right: null };
 const reelProgrammaticTimers = { left: null, middle: null, right: null };
 const reelProgrammaticScroll = { left: false, middle: false, right: false };
+const reelWheelTimers = { left: null, middle: null, right: null };
+const reelWheelActive = { left: false, middle: false, right: false };
 
 const filters = {
   query: "",
@@ -436,6 +438,17 @@ function settleScrolledReel(reel) {
   renderMissions();
 }
 
+function scrollPatternReelByOne(reel, direction, behavior = "smooth") {
+  const container = elements.patternWindows[reel];
+  const cellHeight = reelCellHeight(reel);
+  if (!cellHeight) return;
+  const currentIndex = Math.round(container.scrollTop / cellHeight);
+  container.scrollTo({
+    top: (currentIndex + direction) * cellHeight,
+    behavior,
+  });
+}
+
 function buildPatternReel(reel) {
   const container = elements.patternWindows[reel];
   const sequence = reelDisplaySequence(reel);
@@ -465,13 +478,23 @@ function buildPatternReel(reel) {
       settleScrolledReel(reel);
     }, 150);
   });
+  container.addEventListener("wheel", function (event) {
+    if (!event.deltaY || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
+    event.preventDefault();
+
+    window.clearTimeout(reelWheelTimers[reel]);
+    reelWheelTimers[reel] = window.setTimeout(function () {
+      reelWheelActive[reel] = false;
+    }, 120);
+
+    if (reelWheelActive[reel] || reelProgrammaticScroll[reel]) return;
+    reelWheelActive[reel] = true;
+    scrollPatternReelByOne(reel, Math.sign(event.deltaY), "auto");
+  }, { passive: false });
   container.addEventListener("keydown", function (event) {
     if (event.key !== "ArrowUp" && event.key !== "ArrowDown") return;
     event.preventDefault();
-    container.scrollBy({
-      top: (event.key === "ArrowDown" ? 1 : -1) * reelCellHeight(reel),
-      behavior: "smooth",
-    });
+    scrollPatternReelByOne(reel, event.key === "ArrowDown" ? 1 : -1);
   });
 
   window.requestAnimationFrame(function () {
