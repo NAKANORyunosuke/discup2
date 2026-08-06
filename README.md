@@ -2,7 +2,7 @@
 
 ディスクアップ2の全222リーチ目ミッションと、21停止位置・105制御パターンを、PCでもスマートフォンでも見やすく確認するためのローカルWebアプリです。
 
-公開版：<https://nakanoryunosuke.github.io/diskup2/>
+公開版：<https://nakanoryunosuke.github.io/discup2/>
 
 ## 起動
 

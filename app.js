@@ -1,4 +1,5 @@
-const STORAGE_KEY = "diskup2-reach-mission:v1";
+const STORAGE_KEY = "discup2-reach-mission:v1";
+const LEGACY_STORAGE_KEY = "diskup2-reach-mission:v1";
 const DATA_URL = "data/missions.json";
 const PATTERN_DATA_URL = "data/mission-patterns.json";
 const TOTAL_MISSIONS = 222;
@@ -164,9 +165,26 @@ function isValidMissionNo(value) {
     Number(value) >= 1 && Number(value) <= TOTAL_MISSIONS;
 }
 
+function readMigratedStorage(key, legacyKey) {
+  const currentValue = localStorage.getItem(key);
+  if (currentValue !== null) return currentValue;
+  const legacyValue = localStorage.getItem(legacyKey);
+  if (legacyValue !== null) {
+    try {
+      localStorage.setItem(key, legacyValue);
+      localStorage.removeItem(legacyKey);
+    } catch {
+      // The legacy value can still be read even when migration is unavailable.
+    }
+  }
+  return legacyValue;
+}
+
 function loadLocalState() {
   try {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    const saved = JSON.parse(
+      readMigratedStorage(STORAGE_KEY, LEGACY_STORAGE_KEY) || "{}",
+    );
     completed = new Set(
       Array.isArray(saved.completed) ? saved.completed.filter(isValidMissionNo) : [],
     );
@@ -192,6 +210,7 @@ function saveLocalState() {
   };
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+    localStorage.removeItem(LEGACY_STORAGE_KEY);
     elements.progressDate.textContent = formatUpdatedAt(payload.updatedAt);
   } catch {
     showToast("このブラウザでは達成状態を保存できませんでした");

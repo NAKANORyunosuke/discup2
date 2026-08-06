@@ -48,7 +48,7 @@ function decodeHtml(value) {
 
 async function fetchBuffer(url) {
   const response = await fetch(url, {
-    headers: { "user-agent": "DiskUp2-ReachMission local archive" },
+    headers: { "user-agent": "DiscUp2-ReachMission local archive" },
   });
   if (!response.ok) {
     throw new Error(`${response.status} ${response.statusText}: ${url}`);

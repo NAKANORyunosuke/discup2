@@ -1,7 +1,9 @@
 const CONTROL_DATA_URL = "data/control-table.json";
 const MISSION_DATA_URL = "data/missions.json";
-const MISSION_STATE_STORAGE_KEY = "diskup2-reach-mission:v1";
-const TABLE_PREFERENCES_STORAGE_KEY = "diskup2-control-table:v1";
+const MISSION_STATE_STORAGE_KEY = "discup2-reach-mission:v1";
+const LEGACY_MISSION_STATE_STORAGE_KEY = "diskup2-reach-mission:v1";
+const TABLE_PREFERENCES_STORAGE_KEY = "discup2-control-table:v1";
+const LEGACY_TABLE_PREFERENCES_STORAGE_KEY = "diskup2-control-table:v1";
 
 // The control table numbers the symbol stopped on the lower row. The mission
 // list groups the same 21 reel positions by its own left-position codes.
@@ -101,10 +103,28 @@ function isValidMissionNo(value) {
     Number(value) >= 1 && Number(value) <= 222;
 }
 
+function readMigratedStorage(key, legacyKey) {
+  const currentValue = localStorage.getItem(key);
+  if (currentValue !== null) return currentValue;
+  const legacyValue = localStorage.getItem(legacyKey);
+  if (legacyValue !== null) {
+    try {
+      localStorage.setItem(key, legacyValue);
+      localStorage.removeItem(legacyKey);
+    } catch {
+      // The legacy value can still be read even when migration is unavailable.
+    }
+  }
+  return legacyValue;
+}
+
 function loadCompletionState() {
   try {
     const saved = JSON.parse(
-      localStorage.getItem(MISSION_STATE_STORAGE_KEY) || "{}",
+      readMigratedStorage(
+        MISSION_STATE_STORAGE_KEY,
+        LEGACY_MISSION_STATE_STORAGE_KEY,
+      ) || "{}",
     );
     completed = new Set(
       Array.isArray(saved.completed)
@@ -119,7 +139,10 @@ function loadCompletionState() {
 function loadTablePreferences() {
   try {
     const saved = JSON.parse(
-      localStorage.getItem(TABLE_PREFERENCES_STORAGE_KEY) || "{}",
+      readMigratedStorage(
+        TABLE_PREFERENCES_STORAGE_KEY,
+        LEGACY_TABLE_PREFERENCES_STORAGE_KEY,
+      ) || "{}",
     );
     showCompleted = saved.showCompleted !== false;
   } catch {
@@ -134,6 +157,7 @@ function saveTablePreferences() {
       TABLE_PREFERENCES_STORAGE_KEY,
       JSON.stringify({ showCompleted }),
     );
+    localStorage.removeItem(LEGACY_TABLE_PREFERENCES_STORAGE_KEY);
   } catch {
     showToast("表示設定を保存できませんでした");
   }
@@ -469,11 +493,17 @@ function bindEvents() {
   });
 
   window.addEventListener("storage", function (event) {
-    if (event.key === MISSION_STATE_STORAGE_KEY) {
+    if (
+      event.key === MISSION_STATE_STORAGE_KEY ||
+      event.key === LEGACY_MISSION_STATE_STORAGE_KEY
+    ) {
       loadCompletionState();
       if (missionData) renderRelatedMissions();
     }
-    if (event.key === TABLE_PREFERENCES_STORAGE_KEY) {
+    if (
+      event.key === TABLE_PREFERENCES_STORAGE_KEY ||
+      event.key === LEGACY_TABLE_PREFERENCES_STORAGE_KEY
+    ) {
       loadTablePreferences();
       if (missionData) renderRelatedMissions();
     }
