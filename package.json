@@ -1,0 +1,15 @@
+{
+  "name": "diskup2-reach-mission",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "sync": "npm run sync:missions && npm run sync:table && npm run sync:patterns",
+    "sync:missions": "node scripts/sync-missions.mjs",
+    "sync:table": "node scripts/sync-control-table.mjs",
+    "sync:patterns": "py scripts/build-pattern-index.py",
+    "check": "node --check app.js && node --check table.js && node --check scripts/serve.mjs && node --check scripts/sync-missions.mjs && node --check scripts/sync-control-table.mjs && node scripts/check.mjs"
+  }
+}

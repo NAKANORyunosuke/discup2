@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ディスクアップ2の全222リーチ目ミッションを、見やすく快適に管理できるローカル専用トラッカー。"
+    />
+    <meta name="theme-color" content="#090b10" />
+    <title>DISC UP 2 — Reach Mission</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#mission-grid">ミッション一覧へ移動</a>
+
+    <div class="ambient ambient-red" aria-hidden="true"></div>
+    <div class="ambient ambient-blue" aria-hidden="true"></div>
+
+    <header class="app-header">
+      <a class="brand" href="#" aria-label="DISC UP 2 Reach Mission トップ">
+        <span class="brand-mark" aria-hidden="true">
+          <span>7</span><span>★</span><span>B</span>
+        </span>
+        <span class="brand-copy">
+          <strong>DISC UP 2</strong>
+          <small>REACH MISSION</small>
+        </span>
+      </a>
+
+      <nav class="app-nav" aria-label="ツール切り替え">
+        <a class="active" href="index.html" aria-current="page">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 5h14v14H5zM9 5v14M15 5v14M5 10h14M5 15h14" />
+          </svg>
+          ミッション
+        </a>
+        <a href="table.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16M8 3v6M14 9v6M18 15v6" />
+          </svg>
+          制御表
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="local-badge">
+          <span class="status-dot" aria-hidden="true"></span>
+          この端末に自動保存
+        </span>
+        <button class="icon-button" id="export-button" type="button" aria-label="達成データを書き出す" title="データを書き出す">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 15v4h14v-4" />
+          </svg>
+        </button>
+        <button class="icon-button" id="import-button" type="button" aria-label="達成データを読み込む" title="データを読み込む">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 16V4m0 0 4 4m-4-4L8 8M5 15v4h14v-4" />
+          </svg>
+        </button>
+        <input id="import-file" type="file" accept="application/json,.json" hidden />
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> COMPLETE THE REACH</p>
+          <h1 id="page-title">リーチ目を、<br /><em>集める。</em></h1>
+          <p class="hero-lead">
+            全222ミッションを見やすいカードで。検索も絞り込みも、達成記録もひとつの画面で完結します。
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" id="random-button" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
+              </svg>
+              次の一件を選ぶ
+            </button>
+            <button class="text-button" id="scroll-to-missions" type="button">
+              一覧を見る
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="progress-panel">
+          <div class="progress-topline">
+            <span>YOUR PROGRESS</span>
+            <span id="progress-date">LOCAL DATA</span>
+          </div>
+          <div class="progress-main">
+            <div
+              class="progress-ring"
+              id="progress-ring"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="222"
+              aria-valuenow="0"
+            >
+              <div class="progress-ring-inner">
+                <strong id="progress-percent">0<small>%</small></strong>
+                <span>COMPLETE</span>
+              </div>
+            </div>
+            <div class="progress-numbers">
+              <div>
+                <span>達成済み</span>
+                <strong id="completed-count">0</strong>
+              </div>
+              <div>
+                <span>残り</span>
+                <strong id="remaining-count">222</strong>
+              </div>
+              <div>
+                <span>お気に入り</span>
+                <strong id="favorite-count">0</strong>
+              </div>
+            </div>
+          </div>
+          <div class="rank-progress" id="rank-progress" aria-label="ランク別進捗"></div>
+        </div>
+      </section>
+
+      <section class="mission-section" aria-labelledby="mission-heading">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">MISSION ARCHIVE</p>
+            <h2 id="mission-heading">リーチ目ミッション</h2>
+          </div>
+          <p>
+            <strong id="result-count">222</strong>
+            <span id="result-label">件を表示</span>
+          </p>
+        </div>
+
+        <details class="pattern-search-panel" id="pattern-search-panel" open>
+          <summary>
+            <span class="pattern-search-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h12v12H4zM8 4v12M12 4v12M4 8h12M4 12h12m2.5 6.5L22 22" />
+                <circle cx="17" cy="17" r="4.5" />
+              </svg>
+            </span>
+            <span class="pattern-search-title">
+              <small>STOP PATTERN SEARCH</small>
+              <strong>停止形からリーチ目を探す</strong>
+            </span>
+            <span class="pattern-search-result" aria-live="polite">
+              <strong id="pattern-match-count">—</strong>
+              <span id="pattern-match-label">リールを選択</span>
+            </span>
+            <svg class="pattern-summary-chevron" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m7 10 5 5 5-5" />
+            </svg>
+          </summary>
+
+          <div class="pattern-search-body">
+            <p class="pattern-search-help">
+              図柄部分を直接上下にスクロールしてください。スマートフォンではそのままスワイプできます。
+              分からないリールは「未指定」で検索対象から外せ、画像の「Any」はどの停止形にも一致します。
+            </p>
+
+            <div class="pattern-reels" role="group" aria-label="停止形を選択">
+              <div class="pattern-reel-picker" data-reel="left">
+                <div class="pattern-reel-heading">
+                  <span>LEFT</span>
+                  <span class="pattern-reel-heading-actions">
+                    <strong>左リール</strong>
+                    <button class="pattern-reel-clear" id="pattern-left-clear" type="button" aria-label="左リールを未指定にする">未指定</button>
+                  </span>
+                </div>
+                <div class="pattern-reel-scroll-hint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m8 7 4-4 4 4M12 3v18m-4-4 4 4 4-4" /></svg>
+                  上下にスクロール
+                </div>
+                <div class="pattern-reel-window" id="pattern-left-window" tabindex="0" role="region" aria-live="polite"></div>
+                <label class="pattern-select-wrap" for="pattern-left-select">
+                  <span>直接選択</span>
+                  <span class="pattern-select-control">
+                    <select id="pattern-left-select" aria-label="左リールの停止形"></select>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+                  </span>
+                </label>
+              </div>
+
+              <div class="pattern-reel-picker" data-reel="middle">
+                <div class="pattern-reel-heading">
+                  <span>MIDDLE</span>
+                  <span class="pattern-reel-heading-actions">
+                    <strong>中リール</strong>
+                    <button class="pattern-reel-clear" id="pattern-middle-clear" type="button" aria-label="中リールを未指定にする">未指定</button>
+                  </span>
+                </div>
+                <div class="pattern-reel-scroll-hint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m8 7 4-4 4 4M12 3v18m-4-4 4 4 4-4" /></svg>
+                  上下にスクロール
+                </div>
+                <div class="pattern-reel-window" id="pattern-middle-window" tabindex="0" role="region" aria-live="polite"></div>
+                <label class="pattern-select-wrap" for="pattern-middle-select">
+                  <span>直接選択</span>
+                  <span class="pattern-select-control">
+                    <select id="pattern-middle-select" aria-label="中リールの停止形"></select>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+                  </span>
+                </label>
+              </div>
+
+              <div class="pattern-reel-picker" data-reel="right">
+                <div class="pattern-reel-heading">
+                  <span>RIGHT</span>
+                  <span class="pattern-reel-heading-actions">
+                    <strong>右リール</strong>
+                    <button class="pattern-reel-clear" id="pattern-right-clear" type="button" aria-label="右リールを未指定にする">未指定</button>
+                  </span>
+                </div>
+                <div class="pattern-reel-scroll-hint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m8 7 4-4 4 4M12 3v18m-4-4 4 4 4-4" /></svg>
+                  上下にスクロール
+                </div>
+                <div class="pattern-reel-window" id="pattern-right-window" tabindex="0" role="region" aria-live="polite"></div>
+                <label class="pattern-select-wrap" for="pattern-right-select">
+                  <span>直接選択</span>
+                  <span class="pattern-select-control">
+                    <select id="pattern-right-select" aria-label="右リールの停止形"></select>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="pattern-search-footer">
+              <p><strong>TIP</strong> 止まった位置に合わせて検索結果が自動で切り替わります。</p>
+              <button class="pattern-clear-button" id="pattern-clear" type="button" disabled>
+                停止形をクリア
+              </button>
+            </div>
+          </div>
+        </details>
+
+        <div class="filter-panel" id="filter-panel">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m16 16 4 4" />
+            </svg>
+            <label class="sr-only" for="search-input">番号やコメントから検索</label>
+            <input
+              id="search-input"
+              type="search"
+              autocomplete="off"
+              placeholder="番号・停止形・コメントを検索"
+            />
+            <kbd>/</kbd>
+          </div>
+
+          <div class="status-tabs" role="group" aria-label="達成状態">
+            <button type="button" class="status-tab active" data-status="all" aria-pressed="true">すべて</button>
+            <button type="button" class="status-tab" data-status="incomplete" aria-pressed="false">未達成</button>
+            <button type="button" class="status-tab" data-status="complete" aria-pressed="false">達成済み</button>
+            <button type="button" class="status-tab" data-status="favorite" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z" />
+              </svg>
+              お気に入り
+            </button>
+          </div>
+
+          <div class="filter-row">
+            <div class="rank-filters" id="rank-filters" role="group" aria-label="ランク">
+              <span>RANK</span>
+              <button type="button" class="rank-filter active" data-rank="all" aria-pressed="true">ALL</button>
+              <button type="button" class="rank-filter" data-rank="NORMAL" aria-pressed="false">NORMAL</button>
+              <button type="button" class="rank-filter rank-a" data-rank="A" aria-pressed="false">A</button>
+              <button type="button" class="rank-filter rank-s" data-rank="S" aria-pressed="false">S</button>
+              <button type="button" class="rank-filter rank-ss" data-rank="SS" aria-pressed="false">SS</button>
+            </div>
+
+            <label class="select-wrap">
+              <span class="sr-only">左リール位置</span>
+              <select id="left-filter">
+                <option value="all">左リール：すべて</option>
+                <option value="red">枠内 赤7</option>
+                <option value="blue">枠内 青7</option>
+                <option value="black">枠内 黒BAR</option>
+              </select>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+            </label>
+
+            <label class="select-wrap method-wrap">
+              <span class="sr-only">打ち方</span>
+              <select id="method-filter">
+                <option value="all">打ち方：すべて</option>
+                <option value="sequential">順押し</option>
+                <option value="sandwich">ハサミ打ち</option>
+                <option value="unspecified">指定なし</option>
+              </select>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+            </label>
+
+            <label class="select-wrap sort-wrap">
+              <span class="sr-only">並び順</span>
+              <select id="sort-select">
+                <option value="number">番号順</option>
+                <option value="difficulty">難易度が高い順</option>
+                <option value="remaining">未達成を先に</option>
+                <option value="variants">候補数が多い順</option>
+              </select>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+            </label>
+
+            <button class="clear-button" id="clear-filters" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13M10 11v5m4-5v5" />
+              </svg>
+              条件をクリア
+            </button>
+          </div>
+        </div>
+
+        <div class="active-filter-note" id="active-filter-note" hidden></div>
+
+        <div class="mission-grid" id="mission-grid" aria-live="polite" aria-busy="true">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">0</span>
+          <h3>該当するミッションがありません</h3>
+          <p>検索語か絞り込み条件を変えてみてください。</p>
+          <button class="secondary-button" id="empty-clear" type="button">すべて表示する</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>DISC UP 2 — REACH MISSION</strong>
+        <span>Local collection tracker</span>
+      </div>
+      <p>
+        ミッション情報・画像：
+        <a href="https://p.datu.work/model/discup2/mission.html" target="_blank" rel="noreferrer">P Tool</a>
+        を参照した非公式ローカル再構成
+      </p>
+      <span>DATA ver.20220502-01</span>
+    </footer>
+
+    <dialog class="mission-dialog" id="mission-dialog">
+      <div class="dialog-shell">
+        <button class="dialog-close" id="dialog-close" type="button" aria-label="詳細を閉じる">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+        <div class="dialog-visual">
+          <div class="dialog-image-frame">
+            <img id="dialog-image" src="" alt="" />
+          </div>
+          <button class="dialog-nav dialog-prev" id="dialog-prev" type="button" aria-label="前のミッション">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <button class="dialog-nav dialog-next" id="dialog-next" type="button" aria-label="次のミッション">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+          </button>
+        </div>
+        <div class="dialog-content">
+          <div class="dialog-meta">
+            <span id="dialog-number">MISSION 001</span>
+            <span class="rank-badge" id="dialog-rank">NORMAL</span>
+          </div>
+          <h2 id="dialog-title">上段赤7からのリーチ目</h2>
+          <p class="dialog-note" id="dialog-note"></p>
+          <dl>
+            <div>
+              <dt>左リール</dt>
+              <dd id="dialog-left"></dd>
+            </div>
+            <div>
+              <dt>候補パターン</dt>
+              <dd id="dialog-variants"></dd>
+            </div>
+            <div id="dialog-constraint-row">
+              <dt>押し順</dt>
+              <dd id="dialog-constraint"></dd>
+            </div>
+          </dl>
+          <div class="dialog-actions">
+            <button class="favorite-action" id="dialog-favorite" type="button" aria-pressed="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z" />
+              </svg>
+              お気に入り
+            </button>
+            <button class="primary-button complete-action" id="dialog-complete" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <noscript>このページを利用するにはJavaScriptを有効にしてください。</noscript>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

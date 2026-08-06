@@ -1,0 +1,2734 @@
+{
+  "source": "https://mokkun7.com/enjoy/discup2-table/",
+  "title": "ディスクアップ2 制御・スベリ対応表",
+  "fetchedAt": "2026-08-06T10:08:19.136Z",
+  "totalStops": 21,
+  "totalPatterns": 105,
+  "notes": [
+    "各番号の左リール第一停止を下段に押した場合の対応表です。",
+    "スベリコマ数は、対応番号を下段に押した場合を基準にしています。",
+    "共通1枚役は、前ゲームでSBが入賞していないことが条件です。",
+    "左⑯のギザリプはチェリーの代用図柄です。SB入賞に注意してください。",
+    "ボーナス未成立時および成立時の制御です。"
+  ],
+  "stops": [
+    {
+      "number": 1,
+      "circled": "①",
+      "heading": "①番を下段押し",
+      "symbol": "星",
+      "image": "assets/table/stops/01.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 1,
+          "image": "assets/table/results/01.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 2,
+          "image": "assets/table/results/02.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目リプレイ+赤/青"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG",
+            "リーチ目リプレイ+赤/青"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り(1確)",
+          "annotation": "1確",
+          "state": "confirmed",
+          "resultStop": 3,
+          "image": "assets/table/results/03.png",
+          "roles": [
+            "リーチ目役A+赤",
+            "リーチ目役B+赤/REG"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役A+赤",
+            "リーチ目役B+赤/REG"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 4,
+          "image": "assets/table/results/04.png",
+          "roles": [
+            "通常リプレイ",
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役A+青BIG",
+            "リーチ目役C+赤/REG",
+            "リーチ目役D+黒BIG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "通常リプレイ"
+          ],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役A+青BIG",
+            "リーチ目役C+赤/REG",
+            "リーチ目役D+黒BIG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 5,
+          "image": "assets/table/results/05.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "赤頭10枚役",
+            "青頭10枚役",
+            "黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB",
+            "単独青/異色",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+青/黒",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤青/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "赤頭10枚役",
+            "青頭10枚役",
+            "黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独青/異色",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+青/黒",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤青/REG"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "circled": "②",
+      "heading": "②番を下段押し",
+      "symbol": "チェリー",
+      "image": "assets/table/stops/02.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 2,
+          "image": "assets/table/results/02.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 3,
+          "image": "assets/table/results/03.png",
+          "roles": [
+            "スイカA",
+            "単独青/異色",
+            "スイカA+青",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤/異色"
+          ],
+          "normalRoles": [
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独青/異色",
+            "スイカA+青",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤/異色"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 4,
+          "image": "assets/table/results/04.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤頭10枚役",
+            "青頭10枚役",
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役A+青/黒",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤頭10枚役",
+            "青頭10枚役"
+          ],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役A+青/黒",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 5,
+          "image": "assets/table/results/05.png",
+          "roles": [
+            "黒頭10枚役",
+            "共通10枚役",
+            "スイカB",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+黒",
+            "スイカB+赤",
+            "リーチ目役C+青",
+            "リーチ目役D+青"
+          ],
+          "normalRoles": [
+            "黒頭10枚役",
+            "共通10枚役",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+黒",
+            "スイカB+赤",
+            "リーチ目役C+青",
+            "リーチ目役D+青"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(青1確)",
+          "annotation": "青1確",
+          "state": "confirmed",
+          "resultStop": 6,
+          "image": "assets/table/results/06.png",
+          "roles": [
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役B+青"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "circled": "③",
+      "heading": "③番を下段押し",
+      "symbol": "スイカ",
+      "image": "assets/table/stops/03.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 3,
+          "image": "assets/table/results/03.png",
+          "roles": [
+            "スイカB",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤",
+            "リーチ目役D+青"
+          ],
+          "normalRoles": [
+            "スイカB"
+          ],
+          "hotRoles": [
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤",
+            "リーチ目役D+青"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 4,
+          "image": "assets/table/results/04.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒10枚役",
+            "共通10枚役",
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役A+青/黒",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒10枚役",
+            "共通10枚役"
+          ],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役A+青/黒",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 5,
+          "image": "assets/table/results/05.png",
+          "roles": [
+            "スイカA",
+            "単独青/異色",
+            "スイカA+青/黒",
+            "リーチ目役A+異色"
+          ],
+          "normalRoles": [
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独青/異色",
+            "スイカA+青/黒",
+            "リーチ目役A+異色"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(青1確)",
+          "annotation": "青1確",
+          "state": "confirmed",
+          "resultStop": 6,
+          "image": "assets/table/results/06.png",
+          "roles": [
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役B+青"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 7,
+          "image": "assets/table/results/07.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "circled": "④",
+      "heading": "④番を下段押し",
+      "symbol": "リプレイ",
+      "image": "assets/table/stops/04.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 4,
+          "image": "assets/table/results/04.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒10枚役",
+            "共通10枚役",
+            "通常リプレイ+青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役A+赤/青/黒",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒10枚役",
+            "共通10枚役"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役A+赤/青/黒",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 5,
+          "image": "assets/table/results/05.png",
+          "roles": [
+            "スイカA",
+            "スイカB",
+            "単独赤/青/黒/異色/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目役A+異色",
+            "リーチ目役D+青",
+            "共通1枚役+青"
+          ],
+          "normalRoles": [
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/異色/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目役A+異色",
+            "リーチ目役D+青",
+            "共通1枚役+青"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り(1確)",
+          "annotation": "1確",
+          "state": "confirmed",
+          "resultStop": 6,
+          "image": "assets/table/results/06.png",
+          "roles": [
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役B+青"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 7,
+          "image": "assets/table/results/07.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 8,
+          "image": "assets/table/results/08.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "circled": "⑤",
+      "heading": "⑤番を下段押し",
+      "symbol": "スイカ",
+      "image": "assets/table/stops/05.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 5,
+          "image": "assets/table/results/05.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB",
+            "単独赤/青/黒/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青黒",
+            "スイカB+赤",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤/青/黒/REG",
+            "共通1枚役+青"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青黒",
+            "スイカB+赤",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤/青/黒/REG",
+            "共通1枚役+青"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 6,
+          "image": "assets/table/results/06.png",
+          "roles": [
+            "通常リプレイ",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤/青",
+            "リーチ目役B+青",
+            "リーチ目役C+赤/REG",
+            "共通1枚役+黒/REG"
+          ],
+          "normalRoles": [
+            "通常リプレイ"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤/青",
+            "リーチ目役B+青",
+            "リーチ目役C+赤/REG",
+            "共通1枚役+黒/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 7,
+          "image": "assets/table/results/07.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(赤1確)",
+          "annotation": "赤1確",
+          "state": "confirmed",
+          "resultStop": 8,
+          "image": "assets/table/results/08.png",
+          "roles": [
+            "共通1枚役+赤"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "共通1枚役+赤"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 9,
+          "image": "assets/table/results/09.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "circled": "⑥",
+      "heading": "⑥番を下段押し",
+      "symbol": "黒BAR",
+      "image": "assets/table/stops/06.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 6,
+          "image": "assets/table/results/06.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "共通1枚役+赤/青/黒/REG",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤青黒",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒頭10枚役",
+            "共通10枚役"
+          ],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "共通1枚役+赤/青/黒/REG",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤青黒",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 7,
+          "image": "assets/table/results/07.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 8,
+          "image": "assets/table/results/08.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 9,
+          "image": "assets/table/results/09.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 10,
+          "image": "assets/table/results/10.png",
+          "roles": [
+            "スイカA",
+            "スイカB",
+            "単独青/異色",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目役A+異色",
+            "リーチ目役B+青",
+            "リーチ目役D+青"
+          ],
+          "normalRoles": [
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独青/異色",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目役A+異色",
+            "リーチ目役B+青",
+            "リーチ目役D+青"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "circled": "⑦",
+      "heading": "⑦番を下段押し",
+      "symbol": "星",
+      "image": "assets/table/stops/07.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 7,
+          "image": "assets/table/results/07.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 8,
+          "image": "assets/table/results/08.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 9,
+          "image": "assets/table/results/09.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 10,
+          "image": "assets/table/results/10.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/黒頭10枚役",
+            "スイカA",
+            "単独異色",
+            "通常リプレイ+青/黒/REG",
+            "スイカA+黒",
+            "リーチ目役A+赤/黒/異色",
+            "リーチ目役C+赤/黒/REG",
+            "リーチ目役D+赤/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/黒頭10枚役",
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独異色",
+            "通常リプレイ+青/黒/REG",
+            "スイカA+黒",
+            "リーチ目役A+赤/黒/異色",
+            "リーチ目役C+赤/黒/REG",
+            "リーチ目役D+赤/黒/REG"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 11,
+          "image": "assets/table/results/11.png",
+          "roles": [
+            "青頭10枚役",
+            "共通10枚役",
+            "スイカB",
+            "単独赤/青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+青",
+            "リーチ目役B+赤/青/黒/REG",
+            "リーチ目役C+青",
+            "リーチ目役D+青",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "青頭10枚役",
+            "共通10枚役",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+青",
+            "リーチ目役B+赤/青/黒/REG",
+            "リーチ目役C+青",
+            "リーチ目役D+青",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "circled": "⑧",
+      "heading": "⑧番を下段押し",
+      "symbol": "リプレイ",
+      "image": "assets/table/stops/08.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 8,
+          "image": "assets/table/results/08.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 9,
+          "image": "assets/table/results/09.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 10,
+          "image": "assets/table/results/10.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/黒頭10枚役",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役A+赤/黒",
+            "リーチ目役C+赤/黒/REG",
+            "リーチ目役D+赤/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/黒頭10枚役"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役A+赤/黒",
+            "リーチ目役C+赤/黒/REG",
+            "リーチ目役D+赤/REG"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 11,
+          "image": "assets/table/results/11.png",
+          "roles": [
+            "スイカA",
+            "単独赤/青/黒/異色/REG",
+            "スイカA+青/黒",
+            "リーチ目役A+異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役D+黒",
+            "共通1枚役+赤/黒/REG"
+          ],
+          "normalRoles": [
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/異色/REG",
+            "スイカA+青/黒",
+            "リーチ目役A+異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役D+黒",
+            "共通1枚役+赤/黒/REG"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 12,
+          "image": "assets/table/results/12.png",
+          "roles": [
+            "青頭10枚役",
+            "共通10枚役",
+            "スイカB",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+青",
+            "リーチ目役B+青",
+            "リーチ目役C+青",
+            "リーチ目役D+青",
+            "共通1枚役+青"
+          ],
+          "normalRoles": [
+            "青頭10枚役",
+            "共通10枚役",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "共通10枚役+赤/青/黒/REG",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+青",
+            "リーチ目役B+青",
+            "リーチ目役C+青",
+            "リーチ目役D+青",
+            "共通1枚役+青"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "circled": "⑨",
+      "heading": "⑨番を下段押し",
+      "symbol": "チェリー",
+      "image": "assets/table/stops/09.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 9,
+          "image": "assets/table/results/09.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 10,
+          "image": "assets/table/results/10.png",
+          "roles": [
+            "通常リプレイ",
+            "通常リプレイ+青黒REG",
+            "リーチ目役A+赤",
+            "リーチ目役C+赤/REG"
+          ],
+          "normalRoles": [
+            "通常リプレイ"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青黒REG",
+            "リーチ目役A+赤",
+            "リーチ目役C+赤/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 11,
+          "image": "assets/table/results/11.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "単独青/異色",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独青/異色",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 12,
+          "image": "assets/table/results/12.png",
+          "roles": [
+            "スイカB",
+            "単独赤/黒/REG",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤青",
+            "リーチ目役D+青"
+          ],
+          "normalRoles": [
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤青",
+            "リーチ目役D+青"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(青1確)",
+          "annotation": "青1確",
+          "state": "confirmed",
+          "resultStop": 13,
+          "image": "assets/table/results/13.png",
+          "roles": [
+            "リーチ目役A+青",
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役A+青",
+            "リーチ目役B+青"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "circled": "⑩",
+      "heading": "⑩番を下段押し",
+      "symbol": "リプレイ",
+      "image": "assets/table/stops/10.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 10,
+          "image": "assets/table/results/10.png",
+          "roles": [
+            "ハズレ",
+            "通常リプレイ",
+            "赤/黒頭10枚役",
+            "スイカA",
+            "単独異色",
+            "通常リプレイ+青/黒/REG",
+            "スイカA+黒",
+            "リーチ目役A+赤/黒/異色",
+            "リーチ目役C+赤/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "通常リプレイ",
+            "赤/黒頭10枚役",
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独異色",
+            "通常リプレイ+青/黒/REG",
+            "スイカA+黒",
+            "リーチ目役A+赤/黒/異色",
+            "リーチ目役C+赤/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 11,
+          "image": "assets/table/results/11.png",
+          "roles": [
+            "スイカB",
+            "単独青",
+            "スイカA+青",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役B+赤/黒/REG",
+            "共通1枚役+赤/黒/REG"
+          ],
+          "normalRoles": [
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独青",
+            "スイカA+青",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役B+赤/黒/REG",
+            "共通1枚役+赤/黒/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 12,
+          "image": "assets/table/results/12.png",
+          "roles": [
+            "青頭10枚役",
+            "共通10枚役",
+            "単独赤/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役C+青",
+            "共通1枚役+青"
+          ],
+          "normalRoles": [
+            "青頭10枚役",
+            "共通10枚役"
+          ],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役C+青",
+            "共通1枚役+青"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(青1確)",
+          "annotation": "青1確",
+          "state": "confirmed",
+          "resultStop": 13,
+          "image": "assets/table/results/13.png",
+          "roles": [
+            "リーチ目役A+青",
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役A+青",
+            "リーチ目役B+青"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 14,
+          "image": "assets/table/results/14.png",
+          "roles": [
+            "SB",
+            "チェリー",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役D+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "SB",
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役D+赤/青/黒/REG"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "circled": "⑪",
+      "heading": "⑪番を下段押し",
+      "symbol": "星",
+      "image": "assets/table/stops/11.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 11,
+          "image": "assets/table/results/11.png",
+          "roles": [
+            "青頭10枚役",
+            "共通10枚役",
+            "共通10枚役+赤青黒REG",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役B+赤/REG",
+            "リーチ目役C+青",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "青頭10枚役",
+            "共通10枚役"
+          ],
+          "hotRoles": [
+            "共通10枚役+赤青黒REG",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役B+赤/REG",
+            "リーチ目役C+青",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 12,
+          "image": "assets/table/results/12.png",
+          "roles": [
+            "ハズレ",
+            "赤/黒頭10枚役",
+            "スイカA",
+            "スイカB",
+            "単独赤/青/黒/異色/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+黒",
+            "リーチ目役C+黒"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "赤/黒頭10枚役",
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/異色/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+黒",
+            "リーチ目役C+黒"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 13,
+          "image": "assets/table/results/13.png",
+          "roles": [
+            "リーチ目役A+赤/青",
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役A+赤/青",
+            "リーチ目役B+青"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 14,
+          "image": "assets/table/results/14.png",
+          "roles": [
+            "SB",
+            "通常リプレイ",
+            "チェリー",
+            "通常リプレイ+青黒REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役C+赤/REG",
+            "リーチ目役D+赤/REG"
+          ],
+          "normalRoles": [
+            "SB",
+            "通常リプレイ",
+            "チェリー"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青黒REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役C+赤/REG",
+            "リーチ目役D+赤/REG"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(青or黒1確)",
+          "annotation": "青or黒1確",
+          "state": "confirmed",
+          "resultStop": 15,
+          "image": "assets/table/results/15.png",
+          "roles": [
+            "リーチ目役D+青/黒"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役D+青/黒"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "circled": "⑫",
+      "heading": "⑫番を下段押し",
+      "symbol": "スイカ",
+      "image": "assets/table/stops/12.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 12,
+          "image": "assets/table/results/12.png",
+          "roles": [
+            "ハズレ",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB",
+            "単独赤/青/黒/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+青/黒",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+青/黒",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り(赤or青1確)",
+          "annotation": "赤or青1確",
+          "state": "confirmed",
+          "resultStop": 13,
+          "image": "assets/table/results/13.png",
+          "roles": [
+            "リーチ目役A+赤/青",
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役A+赤/青",
+            "リーチ目役B+青"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 14,
+          "image": "assets/table/results/14.png",
+          "roles": [
+            "SB",
+            "通常リプレイ",
+            "チェリー",
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役C+赤/REG",
+            "リーチ目役D+赤/REG"
+          ],
+          "normalRoles": [
+            "SB",
+            "通常リプレイ",
+            "チェリー"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役C+赤/REG",
+            "リーチ目役D+赤/REG"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 15,
+          "image": "assets/table/results/15.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(青or黒1確)",
+          "annotation": "青or黒1確",
+          "state": "confirmed",
+          "resultStop": 16,
+          "image": "assets/table/results/16.png",
+          "roles": [
+            "リーチ目役D+青/黒"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役D+青/黒"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "circled": "⑬",
+      "heading": "⑬番を下段押し",
+      "symbol": "青7",
+      "image": "assets/table/stops/13.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 13,
+          "image": "assets/table/results/13.png",
+          "roles": [
+            "青頭10枚役",
+            "共通10枚役",
+            "単独赤/青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役A+赤/青/黒",
+            "リーチ目役B+赤/青/黒/REG",
+            "リーチ目役C+青",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "青頭10枚役",
+            "共通10枚役"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役A+赤/青/黒",
+            "リーチ目役B+赤/青/黒/REG",
+            "リーチ目役C+青",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 14,
+          "image": "assets/table/results/14.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "黒頭10枚役",
+            "チェリー",
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役C+赤/黒/REG",
+            "リーチ目役D+赤/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "黒頭10枚役",
+            "チェリー"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役C+赤/黒/REG",
+            "リーチ目役D+赤/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 15,
+          "image": "assets/table/results/15.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(青or黒1確)",
+          "annotation": "青or黒1確",
+          "state": "confirmed",
+          "resultStop": 16,
+          "image": "assets/table/results/16.png",
+          "roles": [
+            "リーチ目役D+青/黒"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役D+青/黒"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 17,
+          "image": "assets/table/results/17.png",
+          "roles": [
+            "赤頭10枚役",
+            "スイカA",
+            "スイカB",
+            "単独異色",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+異色"
+          ],
+          "normalRoles": [
+            "赤頭10枚役",
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独異色",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+異色"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "circled": "⑭",
+      "heading": "⑭番を下段押し",
+      "symbol": "星",
+      "image": "assets/table/stops/14.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 14,
+          "image": "assets/table/results/14.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "青/黒頭10枚役",
+            "チェリー",
+            "単独黒",
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役B+黒",
+            "リーチ目役C+黒",
+            "リーチ目役D+赤/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "青/黒頭10枚役",
+            "チェリー"
+          ],
+          "hotRoles": [
+            "単独黒",
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役B+黒",
+            "リーチ目役C+黒",
+            "リーチ目役D+赤/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り(赤or青1確)",
+          "annotation": "赤or青1確",
+          "state": "confirmed",
+          "resultStop": 15,
+          "image": "assets/table/results/15.png",
+          "roles": [
+            "リーチ目リプレイ+赤/青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目リプレイ+赤/青"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り(青or黒1確)",
+          "annotation": "青or黒1確",
+          "state": "confirmed",
+          "resultStop": 16,
+          "image": "assets/table/results/16.png",
+          "roles": [
+            "リーチ目役D+青/黒"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役D+青/黒"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 17,
+          "image": "assets/table/results/17.png",
+          "roles": [
+            "スイカA",
+            "単独青",
+            "スイカA+青/黒"
+          ],
+          "normalRoles": [
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独青",
+            "スイカA+青/黒"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 18,
+          "image": "assets/table/results/18.png",
+          "roles": [
+            "赤頭10枚役",
+            "共通10枚役",
+            "スイカB",
+            "単独赤/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカB+赤",
+            "リーチ目役A+赤/青/黒/異色",
+            "リーチ目役B+赤/青/REG",
+            "リーチ目役C+赤/青/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "赤頭10枚役",
+            "共通10枚役",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカB+赤",
+            "リーチ目役A+赤/青/黒/異色",
+            "リーチ目役B+赤/青/REG",
+            "リーチ目役C+赤/青/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "circled": "⑮",
+      "heading": "⑮番を下段押し",
+      "symbol": "星",
+      "image": "assets/table/stops/15.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止(赤or青1確)",
+          "annotation": "赤or青1確",
+          "state": "confirmed",
+          "resultStop": 15,
+          "image": "assets/table/results/15.png",
+          "roles": [
+            "リーチ目リプレイ+赤/青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目リプレイ+赤/青"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 16,
+          "image": "assets/table/results/16.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "青/黒頭10枚役",
+            "チェリー",
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役B+黒",
+            "リーチ目役C+黒",
+            "リーチ目役D+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "青/黒頭10枚役",
+            "チェリー"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役B+黒",
+            "リーチ目役C+黒",
+            "リーチ目役D+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 17,
+          "image": "assets/table/results/17.png",
+          "roles": [
+            "スイカA",
+            "単独青",
+            "スイカA+青/黒"
+          ],
+          "normalRoles": [
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独青",
+            "スイカA+青/黒"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 18,
+          "image": "assets/table/results/18.png",
+          "roles": [
+            "赤頭10枚役",
+            "共通10枚役",
+            "スイカB",
+            "単独赤/黒/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカB+赤",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/REG",
+            "リーチ目役C+青",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "赤頭10枚役",
+            "共通10枚役",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/黒/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカB+赤",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/REG",
+            "リーチ目役C+青",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(1確)",
+          "annotation": "1確",
+          "state": "confirmed",
+          "resultStop": 19,
+          "image": "assets/table/results/19.png",
+          "roles": [
+            "リーチ目役A+赤/青",
+            "リーチ目役B+青",
+            "リーチ目役C+赤/REG"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役A+赤/青",
+            "リーチ目役B+青",
+            "リーチ目役C+赤/REG"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "circled": "⑯",
+      "heading": "⑯番を下段押し",
+      "symbol": "ギザリプ",
+      "image": "assets/table/stops/16.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 16,
+          "image": "assets/table/results/16.png",
+          "roles": [
+            "SB",
+            "通常リプレイ",
+            "チェリー",
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役D+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "SB",
+            "通常リプレイ",
+            "チェリー"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG",
+            "チェリー+赤/青/黒/REG",
+            "リーチ目役D+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 17,
+          "image": "assets/table/results/17.png",
+          "roles": [
+            "ハズレ",
+            "青/黒頭10枚役",
+            "リーチ目役B+黒",
+            "リーチ目役C+黒"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "青/黒頭10枚役"
+          ],
+          "hotRoles": [
+            "リーチ目役B+黒",
+            "リーチ目役C+黒"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 18,
+          "image": "assets/table/results/18.png",
+          "roles": [
+            "スイカA",
+            "スイカB",
+            "単独赤/青/黒/異色/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/異色/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 19,
+          "image": "assets/table/results/19.png",
+          "roles": [
+            "赤頭10枚役",
+            "共通10枚役",
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役A+赤/青",
+            "リーチ目役C+赤/青/REG"
+          ],
+          "normalRoles": [
+            "赤頭10枚役",
+            "共通10枚役"
+          ],
+          "hotRoles": [
+            "共通10枚役+赤/青/黒/REG",
+            "リーチ目役A+赤/青",
+            "リーチ目役C+赤/青/REG"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(青1確)",
+          "annotation": "青1確",
+          "state": "confirmed",
+          "resultStop": 20,
+          "image": "assets/table/results/20.png",
+          "roles": [
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役B+青"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "circled": "⑰",
+      "heading": "⑰番を下段押し",
+      "symbol": "星",
+      "image": "assets/table/stops/17.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 17,
+          "image": "assets/table/results/17.png",
+          "roles": [
+            "通常リプレイ",
+            "通常リプレイ+青/黒/REG"
+          ],
+          "normalRoles": [
+            "通常リプレイ"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 18,
+          "image": "assets/table/results/18.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "単独青/異色",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+黒",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA"
+          ],
+          "hotRoles": [
+            "単独青/異色",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+黒",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 19,
+          "image": "assets/table/results/19.png",
+          "roles": [
+            "スイカB",
+            "単独赤/黒/REG",
+            "スイカB+赤",
+            "リーチ目役A+赤/青",
+            "リーチ目役B+赤/REG",
+            "リーチ目役C+赤/REG",
+            "リーチ目役D+青/黒"
+          ],
+          "normalRoles": [
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "スイカB+赤",
+            "リーチ目役A+赤/青",
+            "リーチ目役B+赤/REG",
+            "リーチ目役C+赤/REG",
+            "リーチ目役D+青/黒"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(青1確)",
+          "annotation": "青1確",
+          "state": "confirmed",
+          "resultStop": 20,
+          "image": "assets/table/results/20.png",
+          "roles": [
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役B+青"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 21,
+          "image": "assets/table/results/21.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "circled": "⑱",
+      "heading": "⑱番を下段押し",
+      "symbol": "スイカ",
+      "image": "assets/table/stops/18.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 18,
+          "image": "assets/table/results/18.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB",
+            "単独赤/青/黒/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤/青/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/青/黒/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+青/黒",
+            "リーチ目役D+赤/青/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 19,
+          "image": "assets/table/results/19.png",
+          "roles": [
+            "通常リプレイ",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役A+赤/青",
+            "リーチ目役C+赤/REG"
+          ],
+          "normalRoles": [
+            "通常リプレイ"
+          ],
+          "hotRoles": [
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役A+赤/青",
+            "リーチ目役C+赤/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り(青1確)",
+          "annotation": "青1確",
+          "state": "confirmed",
+          "resultStop": 20,
+          "image": "assets/table/results/20.png",
+          "roles": [
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目役B+青"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 21,
+          "image": "assets/table/results/21.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 1,
+          "image": "assets/table/results/01.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "circled": "⑲",
+      "heading": "⑲番を下段押し",
+      "symbol": "リプレイ",
+      "image": "assets/table/stops/19.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 19,
+          "image": "assets/table/results/19.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒頭10枚役",
+            "スイカA",
+            "スイカB",
+            "単独青/異色",
+            "通常リプレイ+青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目役A+赤/青/黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/青/黒/REG",
+            "共通1枚役+赤/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒頭10枚役",
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独青/異色",
+            "通常リプレイ+青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目役A+赤/青/黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/青/黒/REG",
+            "共通1枚役+赤/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り(1確)",
+          "annotation": "1確",
+          "state": "confirmed",
+          "resultStop": 20,
+          "image": "assets/table/results/20.png",
+          "roles": [
+            "単独赤/黒/REG",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役B+青"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 21,
+          "image": "assets/table/results/21.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(青1確)",
+          "annotation": "青1確",
+          "state": "confirmed",
+          "resultStop": 1,
+          "image": "assets/table/results/01.png",
+          "roles": [
+            "共通1枚役+青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "共通1枚役+青"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 2,
+          "image": "assets/table/results/02.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "circled": "⑳",
+      "heading": "⑳番を下段押し",
+      "symbol": "赤7",
+      "image": "assets/table/stops/20.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 20,
+          "image": "assets/table/results/20.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB",
+            "単独赤/青/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤/青/黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/青/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独赤/青/異色/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+青/黒",
+            "スイカB+赤",
+            "リーチ目リプレイ+赤/青",
+            "リーチ目役A+赤/青/黒/異色",
+            "リーチ目役B+赤/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/青/黒/REG",
+            "共通1枚役+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 21,
+          "image": "assets/table/results/21.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 1,
+          "image": "assets/table/results/01.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 2,
+          "image": "assets/table/results/02.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 3,
+          "image": "assets/table/results/03.png",
+          "roles": [
+            "通常リプレイ",
+            "単独黒",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役B+青"
+          ],
+          "normalRoles": [
+            "通常リプレイ"
+          ],
+          "hotRoles": [
+            "単独黒",
+            "通常リプレイ+青/黒/REG",
+            "リーチ目役B+青"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "circled": "㉑",
+      "heading": "㉑番を下段押し",
+      "symbol": "スイカ",
+      "image": "assets/table/stops/21.png",
+      "slips": [
+        {
+          "slip": 0,
+          "label": "ビタ停止",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 21,
+          "image": "assets/table/results/21.png",
+          "roles": [
+            "チェリー",
+            "チェリー+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "チェリー"
+          ],
+          "hotRoles": [
+            "チェリー+赤/青/黒/REG"
+          ]
+        },
+        {
+          "slip": 1,
+          "label": "1コマ滑り(停止しない)",
+          "annotation": "停止しない",
+          "state": "impossible",
+          "resultStop": 1,
+          "image": "assets/table/results/01.png",
+          "roles": [
+            "対応役無し"
+          ],
+          "normalRoles": [
+            "対応役無し"
+          ],
+          "hotRoles": []
+        },
+        {
+          "slip": 2,
+          "label": "2コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 2,
+          "image": "assets/table/results/02.png",
+          "roles": [
+            "リーチ目リプレイ+赤/青"
+          ],
+          "normalRoles": [],
+          "hotRoles": [
+            "リーチ目リプレイ+赤/青"
+          ]
+        },
+        {
+          "slip": 3,
+          "label": "3コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 3,
+          "image": "assets/table/results/03.png",
+          "roles": [
+            "スイカA",
+            "スイカB",
+            "単独青/異色",
+            "スイカA+青",
+            "スイカB+赤",
+            "リーチ目役A+赤/異色",
+            "リーチ目役D+青"
+          ],
+          "normalRoles": [
+            "スイカA",
+            "スイカB"
+          ],
+          "hotRoles": [
+            "単独青/異色",
+            "スイカA+青",
+            "スイカB+赤",
+            "リーチ目役A+赤/異色",
+            "リーチ目役D+青"
+          ]
+        },
+        {
+          "slip": 4,
+          "label": "4コマ滑り",
+          "annotation": "",
+          "state": "normal",
+          "resultStop": 4,
+          "image": "assets/table/results/04.png",
+          "roles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒頭10枚役",
+            "共通10枚役",
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+黒",
+            "リーチ目役A+青/黒",
+            "リーチ目役B+赤/青/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通10枚役+赤/青/黒/REG"
+          ],
+          "normalRoles": [
+            "ハズレ",
+            "SB",
+            "通常リプレイ",
+            "赤/青/黒頭10枚役",
+            "共通10枚役"
+          ],
+          "hotRoles": [
+            "単独赤/黒/REG",
+            "通常リプレイ+青/黒/REG",
+            "共通10枚役+赤/青/黒/REG",
+            "スイカA+黒",
+            "リーチ目役A+青/黒",
+            "リーチ目役B+赤/青/黒/REG",
+            "リーチ目役C+赤/青/黒/REG",
+            "リーチ目役D+赤/黒/REG",
+            "共通10枚役+赤/青/黒/REG"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ディスクアップ2の左リール停止位置とスベリコマ数から、対応成立役と同じ左停止形のリーチ目をすぐ確認できる制御表。"
+    />
+    <meta name="theme-color" content="#090b10" />
+    <title>DISC UP 2 — Control Table</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="table.css" />
+  </head>
+  <body class="table-page">
+    <a class="skip-link" href="#control-workspace">制御表へ移動</a>
+
+    <div class="ambient ambient-red" aria-hidden="true"></div>
+    <div class="ambient ambient-blue" aria-hidden="true"></div>
+
+    <header class="app-header">
+      <a class="brand" href="index.html" aria-label="DISC UP 2 Reach Mission トップ">
+        <span class="brand-mark" aria-hidden="true">
+          <span>7</span><span>★</span><span>B</span>
+        </span>
+        <span class="brand-copy">
+          <strong>DISC UP 2</strong>
+          <small>CONTROL TABLE</small>
+        </span>
+      </a>
+
+      <nav class="app-nav" aria-label="ツール切り替え">
+        <a href="index.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 5h14v14H5zM9 5v14M15 5v14M5 10h14M5 15h14" />
+          </svg>
+          ミッション
+        </a>
+        <a class="active" href="table.html" aria-current="page">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16M8 3v6M14 9v6M18 15v6" />
+          </svg>
+          制御表
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="local-badge">
+          <span class="status-dot table-status-dot" aria-hidden="true"></span>
+          105パターン収録
+        </span>
+        <button class="icon-button" id="print-button" type="button" aria-label="制御表を印刷する" title="印刷する">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 9V3h10v6M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z" />
+          </svg>
+        </button>
+        <a
+          class="icon-button"
+          href="https://mokkun7.com/enjoy/discup2-table/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="参照元サイトを開く"
+          title="参照元サイト"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 4h6v6M20 4l-9 9M19 14v5H5V5h5" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main class="page-shell table-shell">
+      <section class="table-hero" aria-labelledby="table-title">
+        <div>
+          <p class="eyebrow"><span></span> STOP CONTROL EXPLORER</p>
+          <h1 id="table-title">制御を、<br /><em>ひらく。</em></h1>
+          <p class="table-hero-lead">
+            21の停止位置と5つのスベリを、選ぶだけで即確認。
+            長い表を往復せず、対応役とリーチ目まで最短でたどり着けます。
+          </p>
+          <div class="table-metrics" aria-label="収録内容">
+            <div><strong>21</strong><span>停止位置</span></div>
+            <div><strong>5</strong><span>スベリ</span></div>
+            <div><strong>105</strong><span>制御パターン</span></div>
+          </div>
+        </div>
+
+        <div class="how-to-card">
+          <div class="how-to-head">
+            <span>HOW TO READ</span>
+            <strong>4 STEPS</strong>
+          </div>
+          <ol>
+            <li>
+              <span>01</span>
+              <div><strong>押した番号を選ぶ</strong><small>左リール第一停止・下段基準</small></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><strong>スベリコマ数を選ぶ</strong><small>ビタ停止から4コマまで</small></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><strong>対応役を確認する</strong><small>1確・停止しない制御も明示</small></div>
+            </li>
+            <li>
+              <span>04</span>
+              <div><strong>対応リーチ目を見る</strong><small>同じ左リール停止形を画像で一覧</small></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="role-search-section" aria-labelledby="reverse-heading">
+        <div class="reverse-copy">
+          <p class="section-kicker">REVERSE LOOKUP</p>
+          <h2 id="reverse-heading">成立役から逆引き</h2>
+          <p>気になる役を入れると、該当する停止位置とスベリを横断検索します。</p>
+        </div>
+        <div class="role-search-box">
+          <div class="table-search-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m16 16 4 4" />
+            </svg>
+            <label class="sr-only" for="role-search">成立役を検索</label>
+            <input
+              id="role-search"
+              type="search"
+              autocomplete="off"
+              placeholder="例：スイカA、単独青、リーチ目役B"
+            />
+            <button id="role-search-clear" type="button" aria-label="検索を消去" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+            </button>
+          </div>
+          <div class="quick-roles" aria-label="よく使う成立役">
+            <span>QUICK</span>
+            <button type="button" data-query="ハズレ">ハズレ</button>
+            <button type="button" data-query="チェリー">チェリー</button>
+            <button type="button" data-query="スイカ">スイカ</button>
+            <button type="button" data-query="通常リプレイ">通常リプレイ</button>
+            <button type="button" data-query="リーチ目役">リーチ目役</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="reverse-results" id="reverse-results" aria-live="polite" hidden>
+        <div class="reverse-result-head">
+          <p><strong id="reverse-count">0</strong> パターンが該当</p>
+          <span id="reverse-query-label"></span>
+        </div>
+        <div class="reverse-result-grid" id="reverse-result-grid"></div>
+      </section>
+
+      <section class="control-workspace" id="control-workspace" aria-labelledby="workspace-heading">
+        <div class="workspace-heading">
+          <div>
+            <p class="section-kicker">CONTROL LOOKUP</p>
+            <h2 id="workspace-heading">停止位置から調べる</h2>
+          </div>
+          <p>番号は左リール第一停止を下段に押した位置です</p>
+        </div>
+
+        <div class="explorer-layout">
+          <aside class="stop-picker-panel">
+            <div class="panel-label">
+              <span>STEP 01</span>
+              <strong>押した番号</strong>
+            </div>
+            <div class="stop-grid" id="stop-grid" role="group" aria-label="左リール停止位置"></div>
+
+            <details class="reel-reference">
+              <summary>
+                <span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 5h16v14H4zM8 5v14M16 5v14" />
+                  </svg>
+                  リール配列と役構成を見る
+                </span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+              </summary>
+              <div>
+                <img
+                  src="assets/table/reel-array.png"
+                  alt="ディスクアップ2のリール配列とリーチ目役・共通1枚役の構成"
+                  loading="lazy"
+                />
+              </div>
+            </details>
+          </aside>
+
+          <div class="control-panel">
+            <div class="selected-stop-head">
+              <div>
+                <span>SELECTED STOP</span>
+                <h3><strong id="selected-circled">①</strong>番を下段押し</h3>
+                <p id="selected-symbol">左リール：星</p>
+              </div>
+              <div class="selected-stop-image">
+                <img id="selected-stop-image" src="" alt="" />
+              </div>
+            </div>
+
+            <div class="slip-section">
+              <div class="panel-label">
+                <span>STEP 02</span>
+                <strong>スベリコマ数</strong>
+              </div>
+              <div class="slip-tabs" id="slip-tabs" role="tablist" aria-label="スベリコマ数"></div>
+              <div class="slip-legend" aria-label="表示の意味">
+                <span><i class="legend-normal"></i>通常</span>
+                <span><i class="legend-confirmed"></i>1確</span>
+                <span><i class="legend-impossible"></i>停止しない</span>
+              </div>
+            </div>
+
+            <div class="pattern-detail">
+              <div class="pattern-visual">
+                <div class="result-image-frame">
+                  <img id="result-image" src="" alt="" />
+                </div>
+                <div class="stop-route">
+                  <span id="route-start">①</span>
+                  <div>
+                    <strong id="route-slip">ビタ停止</strong>
+                    <svg viewBox="0 0 66 10" aria-hidden="true">
+                      <path d="M1 5h62M58 1l5 4-5 4" />
+                    </svg>
+                  </div>
+                  <span id="route-end">①</span>
+                </div>
+              </div>
+
+              <div class="role-detail">
+                <div class="role-detail-head">
+                  <div>
+                    <span>STEP 03</span>
+                    <h3>対応成立役</h3>
+                  </div>
+                  <span class="pattern-state" id="pattern-state">通常制御</span>
+                </div>
+
+                <div class="impossible-message" id="impossible-message" hidden>
+                  <strong>この停止形にはなりません</strong>
+                  <p>選択した位置・スベリコマ数では停止しない制御です。</p>
+                </div>
+
+                <div id="role-groups">
+                  <div class="role-group" id="normal-role-group">
+                    <span class="role-group-label">通常役</span>
+                    <div class="role-chips" id="normal-roles"></div>
+                  </div>
+                  <div class="role-group hot-role-group" id="hot-role-group">
+                    <span class="role-group-label">ボーナス・リーチ目関連</span>
+                    <div class="role-chips" id="hot-roles"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <section
+              class="related-missions"
+              id="related-missions"
+              aria-labelledby="related-missions-heading"
+              aria-busy="true"
+            >
+              <div class="related-missions-head">
+                <div>
+                  <span>STEP 04</span>
+                  <h3 id="related-missions-heading">対応するリーチ目</h3>
+                </div>
+                <div class="related-missions-summary" role="status" aria-live="polite" aria-atomic="true">
+                  <strong id="related-left-label">停止形を確認中</strong>
+                  <span>
+                    <b id="related-mission-count">—</b><i id="related-mission-total"></i>
+                    MISSIONS
+                  </span>
+                </div>
+              </div>
+              <div class="related-missions-toolbar">
+                <p class="related-missions-guide">
+                  選択した制御で実際に止まる左リール停止形と同じミッションを表示します。
+                  画像を押すと原寸で確認できます。
+                </p>
+                <label class="completed-visibility-control" for="show-completed-toggle">
+                  <input id="show-completed-toggle" type="checkbox" checked />
+                  <span class="completed-visibility-switch" aria-hidden="true"><i></i></span>
+                  <span>
+                    <strong>達成済みも表示</strong>
+                    <small id="related-completed-count">達成済み 0件</small>
+                  </span>
+                </label>
+              </div>
+              <div class="related-mission-grid" id="related-mission-grid"></div>
+              <p class="related-mission-empty" id="related-mission-empty" hidden></p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="control-notes" aria-labelledby="notes-heading">
+        <div>
+          <p class="section-kicker">READ BEFORE PLAY</p>
+          <h2 id="notes-heading">表の条件</h2>
+        </div>
+        <ul id="control-notes-list">
+          <li>データを読み込んでいます。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>DISC UP 2 — CONTROL TABLE</strong>
+        <span>Local stop control explorer</span>
+      </div>
+      <p>
+        制御情報・画像：
+        <a href="https://mokkun7.com/enjoy/discup2-table/" target="_blank" rel="noreferrer">パチスロのある日常</a>
+        を参照した非公式ローカル再構成
+      </p>
+      <span>21 STOPS / 105 PATTERNS</span>
+    </footer>
+
+    <div class="toast" id="table-toast" role="status" aria-live="polite"></div>
+    <noscript>このページを利用するにはJavaScriptを有効にしてください。</noscript>
+    <script type="module" src="table.js"></script>
+  </body>
+</html>

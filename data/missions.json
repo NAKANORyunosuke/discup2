@@ -1,0 +1,2251 @@
+{
+  "source": "https://p.datu.work/model/discup2/mission.html?mode=thum",
+  "version": "20220502-01",
+  "fetchedAt": "2026-08-06T09:46:29.663Z",
+  "total": 222,
+  "leftPositions": {
+    "1": "下段チェリー（黒赤）",
+    "2": "中段チェリー（黒赤）",
+    "3": "上段チェリー（黒赤）",
+    "4": "下段赤7",
+    "5": "中段赤7",
+    "6": "上段赤7",
+    "7": "枠上赤7",
+    "8": "スリホ（赤青）",
+    "9": "ホリホ",
+    "a": "リホホ（枠下青7）",
+    "b": "下段青7",
+    "c": "中段青7",
+    "d": "上段青7",
+    "e": "枠上青7",
+    "f": "下段チェリー（青黒）",
+    "g": "中段チェリー（青黒）",
+    "h": "上段チェリー（青黒）",
+    "i": "下段黒BAR",
+    "j": "中段黒BAR",
+    "k": "上段黒BAR",
+    "l": "スリス"
+  },
+  "missions": [
+    {
+      "no": "001",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 2,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/001.jpg"
+    },
+    {
+      "no": "002",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 1,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/002.jpg"
+    },
+    {
+      "no": "003",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 4,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/003.jpg"
+    },
+    {
+      "no": "004",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 4,
+      "constraint": "",
+      "note": "ハサミ推奨 左青枠下四コマ→挟んで一コマ→中四コマ",
+      "image": "assets/missions/004.jpg"
+    },
+    {
+      "no": "005",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 6,
+      "constraint": "",
+      "note": "1枚Aハサミ 4-0〜4-0〜1",
+      "image": "assets/missions/005.jpg"
+    },
+    {
+      "no": "006",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 10,
+      "constraint": "",
+      "note": "単独 ハサミ0-2-0 赤頭以外",
+      "image": "assets/missions/006.jpg"
+    },
+    {
+      "no": "007",
+      "rank": "S",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 15,
+      "constraint": "",
+      "note": "特リプ ハサミ 右ビタor1コマ",
+      "image": "assets/missions/007.jpg"
+    },
+    {
+      "no": "008",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 1,
+      "constraint": "",
+      "note": "単独 挟み 中リール4コマ",
+      "image": "assets/missions/008.jpg"
+    },
+    {
+      "no": "009",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 2,
+      "constraint": "",
+      "note": "単独 挟み",
+      "image": "assets/missions/009.jpg"
+    },
+    {
+      "no": "010",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 3,
+      "constraint": "ハサミ打ち限定",
+      "note": "共通1枚 右は黒枠上上0-0〜4-0〜2",
+      "image": "assets/missions/010.jpg"
+    },
+    {
+      "no": "011",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 5,
+      "constraint": "",
+      "note": "中リール枠上青でも可特リプ ハサミ0〜2-0〜4-0〜1",
+      "image": "assets/missions/011.jpg"
+    },
+    {
+      "no": "012",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 0,
+      "constraint": "",
+      "note": "順押し推奨 BB成立時推奨 一コマ→ビタ→一コマ",
+      "image": "assets/missions/012.jpg"
+    },
+    {
+      "no": "013",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 4,
+      "constraint": "",
+      "note": "単独 順 0-0〜3-3〜4",
+      "image": "assets/missions/013.jpg"
+    },
+    {
+      "no": "014",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 5,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/014.jpg"
+    },
+    {
+      "no": "015",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 16,
+      "constraint": "",
+      "note": "特リプ ハサミ 0〜2→0→赤枠上",
+      "image": "assets/missions/015.jpg"
+    },
+    {
+      "no": "016",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 6,
+      "constraint": "",
+      "note": "択 順 0-0〜2-0〜4",
+      "image": "assets/missions/016.jpg"
+    },
+    {
+      "no": "017",
+      "rank": "A",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 1,
+      "constraint": "",
+      "note": "一枚aか異色",
+      "image": "assets/missions/017.jpg"
+    },
+    {
+      "no": "018",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 0,
+      "constraint": "",
+      "note": "単独 ハサミで（青七など）異色テンパイさせて中リール四コマ滑り",
+      "image": "assets/missions/018.jpg"
+    },
+    {
+      "no": "019",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 4,
+      "constraint": "",
+      "note": "単独 ハサミ 右0中4",
+      "image": "assets/missions/019.jpg"
+    },
+    {
+      "no": "020",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 4,
+      "constraint": "",
+      "note": "択こぼし 0-0-0",
+      "image": "assets/missions/020.jpg"
+    },
+    {
+      "no": "021",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 7,
+      "constraint": "",
+      "note": "三択こぼし 順押し推奨 二コマ滑り→二コマ滑り→三コマ滑り",
+      "image": "assets/missions/021.jpg"
+    },
+    {
+      "no": "022",
+      "rank": "A",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 4,
+      "constraint": "",
+      "note": "共通1枚 0-0〜2-1〜4",
+      "image": "assets/missions/022.jpg"
+    },
+    {
+      "no": "023",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 5,
+      "constraint": "",
+      "note": "単順0-0〜1-3〜4 択挟0-0〜2-0〜1",
+      "image": "assets/missions/023.jpg"
+    },
+    {
+      "no": "024",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 3,
+      "constraint": "",
+      "note": "単独 ハサミ推奨 二コマ滑り→ビタ→ビタ",
+      "image": "assets/missions/024.jpg"
+    },
+    {
+      "no": "025",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 5,
+      "constraint": "",
+      "note": "単独 AT中ペラポン等 ハサミ推奨 二コマ滑り→ビタ→ビタ",
+      "image": "assets/missions/025.jpg"
+    },
+    {
+      "no": "026",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 2,
+      "constraint": "",
+      "note": "単独 ハサミ 左二コマ→ハサミでビタ→中三コマ",
+      "image": "assets/missions/026.jpg"
+    },
+    {
+      "no": "027",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 6,
+      "constraint": "",
+      "note": "ハサミ推奨 二コマ滑り→挟んで一コマ滑り→四コマ滑り",
+      "image": "assets/missions/027.jpg"
+    },
+    {
+      "no": "028",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 1,
+      "constraint": "",
+      "note": "単独 赤頭成立時左ビタ中4が確実",
+      "image": "assets/missions/028.jpg"
+    },
+    {
+      "no": "029",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 0,
+      "constraint": "",
+      "note": "単独 ハサミ",
+      "image": "assets/missions/029.jpg"
+    },
+    {
+      "no": "030",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 4,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/030.jpg"
+    },
+    {
+      "no": "031",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 4,
+      "constraint": "",
+      "note": "順 0-0〜2-0〜3",
+      "image": "assets/missions/031.jpg"
+    },
+    {
+      "no": "032",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 1,
+      "constraint": "",
+      "note": "単独 ハサミ推奨 一コマ滑り→ビタ→ビタ",
+      "image": "assets/missions/032.jpg"
+    },
+    {
+      "no": "033",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 5,
+      "constraint": "",
+      "note": "三択こぼし ハサミ推奨 ビタ→二コマ→四コマ",
+      "image": "assets/missions/033.jpg"
+    },
+    {
+      "no": "034",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 5,
+      "constraint": "",
+      "note": "単独 順押し推奨 一コマ滑り→ビタ→ビタ",
+      "image": "assets/missions/034.jpg"
+    },
+    {
+      "no": "035",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 7,
+      "constraint": "",
+      "note": "単順0-0/2〜3-0〜2",
+      "image": "assets/missions/035.jpg"
+    },
+    {
+      "no": "036",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 2,
+      "constraint": "",
+      "note": "単独 順押し推奨 オールビタ",
+      "image": "assets/missions/036.jpg"
+    },
+    {
+      "no": "037",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 3,
+      "constraint": "",
+      "note": "単独 ハサミ推奨 三コマ→ハサミビタ→二コマ",
+      "image": "assets/missions/037.jpg"
+    },
+    {
+      "no": "038",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 7,
+      "constraint": "",
+      "note": "単独 ハサミ左4-右0-中4 択こぼし 順押し 中ビタ右ビタ",
+      "image": "assets/missions/038.jpg"
+    },
+    {
+      "no": "039",
+      "rank": "A",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 5,
+      "constraint": "",
+      "note": "特リプ 順 0〜1,4→0〜2→0〜3",
+      "image": "assets/missions/039.jpg"
+    },
+    {
+      "no": "040",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 4,
+      "constraint": "",
+      "note": "単独 ハサミ4-4-0(中リール枠下バー)",
+      "image": "assets/missions/040.jpg"
+    },
+    {
+      "no": "041",
+      "rank": "A",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 6,
+      "constraint": "",
+      "note": "共通1枚成立時限定 ハサミ AT中バシュンキャラリン時など ビタ→挟んでビタ→二コマ滑り",
+      "image": "assets/missions/041.jpg"
+    },
+    {
+      "no": "042",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 5,
+      "constraint": "",
+      "note": "単独 順押し推奨 三コマ滑り→ビタ→四コマ滑り",
+      "image": "assets/missions/042.jpg"
+    },
+    {
+      "no": "043",
+      "rank": "A",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 2,
+      "constraint": "",
+      "note": "共通1枚 順 0〜4→0〜3→0〜2",
+      "image": "assets/missions/043.jpg"
+    },
+    {
+      "no": "044",
+      "rank": "A",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 3,
+      "constraint": "",
+      "note": "AT中やペラポン等 1枚B ハサミ推奨 三コマ→挟んで二コマ滑り→一コマ",
+      "image": "assets/missions/044.jpg"
+    },
+    {
+      "no": "045",
+      "rank": "NORMAL",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 1,
+      "constraint": "",
+      "note": "単独 順押し推奨 ビタ→中リール赤七チェスイカをビタ→一コマ滑り",
+      "image": "assets/missions/045.jpg"
+    },
+    {
+      "no": "046",
+      "rank": "NORMAL",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 4,
+      "constraint": "",
+      "note": "択 順 0→0→0",
+      "image": "assets/missions/046.jpg"
+    },
+    {
+      "no": "047",
+      "rank": "A",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 10,
+      "constraint": "",
+      "note": "共通1枚 順、ハサミ 0、2〜4、0〜4",
+      "image": "assets/missions/047.jpg"
+    },
+    {
+      "no": "048",
+      "rank": "A",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 5,
+      "constraint": "",
+      "note": "単挟0〜1-2〜4-0〜1",
+      "image": "assets/missions/048.jpg"
+    },
+    {
+      "no": "049",
+      "rank": "NORMAL",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 2,
+      "constraint": "",
+      "note": "順押し推奨 ビタ→ビタ→ホリス狙いで一コマ滑り",
+      "image": "assets/missions/049.jpg"
+    },
+    {
+      "no": "050",
+      "rank": "A",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 9,
+      "constraint": "",
+      "note": "特リプ 順、ハサミ 0.3.4、0〜4、0〜3",
+      "image": "assets/missions/050.jpg"
+    },
+    {
+      "no": "051",
+      "rank": "A",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 6,
+      "constraint": "",
+      "note": "共通1枚 順、ハサミ 0、2〜4、1〜4",
+      "image": "assets/missions/051.jpg"
+    },
+    {
+      "no": "052",
+      "rank": "NORMAL",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 3,
+      "constraint": "",
+      "note": "単独 ハサミ推奨 一コマ滑り→ビタ→三コマ滑り",
+      "image": "assets/missions/052.jpg"
+    },
+    {
+      "no": "053",
+      "rank": "A",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 9,
+      "constraint": "",
+      "note": "1枚B＋青 順押し推奨 四コマ→一コマ→一コマ",
+      "image": "assets/missions/053.jpg"
+    },
+    {
+      "no": "054",
+      "rank": "NORMAL",
+      "left": "b",
+      "leftLabel": "下段青7",
+      "variants": 3,
+      "constraint": "",
+      "note": "共通一枚役成立時限定 0-Any-0~2 ハサミ推奨",
+      "image": "assets/missions/054.jpg"
+    },
+    {
+      "no": "055",
+      "rank": "A",
+      "left": "b",
+      "leftLabel": "下段青7",
+      "variants": 8,
+      "constraint": "",
+      "note": "共通1枚 順 0 →0〜2→0〜3",
+      "image": "assets/missions/055.jpg"
+    },
+    {
+      "no": "056",
+      "rank": "NORMAL",
+      "left": "b",
+      "leftLabel": "下段青7",
+      "variants": 1,
+      "constraint": "",
+      "note": "単独",
+      "image": "assets/missions/056.jpg"
+    },
+    {
+      "no": "057",
+      "rank": "NORMAL",
+      "left": "b",
+      "leftLabel": "下段青7",
+      "variants": 5,
+      "constraint": "",
+      "note": "単独",
+      "image": "assets/missions/057.jpg"
+    },
+    {
+      "no": "058",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 0,
+      "constraint": "",
+      "note": "単独",
+      "image": "assets/missions/058.jpg"
+    },
+    {
+      "no": "059",
+      "rank": "A",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 4,
+      "constraint": "",
+      "note": "1枚C",
+      "image": "assets/missions/059.jpg"
+    },
+    {
+      "no": "060",
+      "rank": "A",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 6,
+      "constraint": "",
+      "note": "択 ハサミ 0-1-0",
+      "image": "assets/missions/060.jpg"
+    },
+    {
+      "no": "061",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 9,
+      "constraint": "",
+      "note": "択こぼし 順押し",
+      "image": "assets/missions/061.jpg"
+    },
+    {
+      "no": "062",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 5,
+      "constraint": "",
+      "note": "択こぼし ハサミ 0-0-0",
+      "image": "assets/missions/062.jpg"
+    },
+    {
+      "no": "063",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 7,
+      "constraint": "",
+      "note": "単独 挟み 中4",
+      "image": "assets/missions/063.jpg"
+    },
+    {
+      "no": "064",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 5,
+      "constraint": "",
+      "note": "択こぼし 順押し 中0-1右0-2",
+      "image": "assets/missions/064.jpg"
+    },
+    {
+      "no": "065",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 9,
+      "constraint": "",
+      "note": "単独 順押し 中0-1",
+      "image": "assets/missions/065.jpg"
+    },
+    {
+      "no": "066",
+      "rank": "S",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 8,
+      "constraint": "",
+      "note": "スイカ黒 4→中右スイカ狙い",
+      "image": "assets/missions/066.jpg"
+    },
+    {
+      "no": "067",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 4,
+      "constraint": "",
+      "note": "単独 挟み推奨 一コマ→挟んでビタ→中リール二コマ滑り",
+      "image": "assets/missions/067.jpg"
+    },
+    {
+      "no": "068",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 7,
+      "constraint": "",
+      "note": "択こぼし 挟み 一コマ→挟んでビタ→中リール上段青七狙いで三コマ滑り",
+      "image": "assets/missions/068.jpg"
+    },
+    {
+      "no": "069",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 3,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/069.jpg"
+    },
+    {
+      "no": "070",
+      "rank": "A",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 5,
+      "constraint": "",
+      "note": "一枚役C",
+      "image": "assets/missions/070.jpg"
+    },
+    {
+      "no": "071",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 1,
+      "constraint": "",
+      "note": "単独 順押し 中0-1右3-4",
+      "image": "assets/missions/071.jpg"
+    },
+    {
+      "no": "072",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 0,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/072.jpg"
+    },
+    {
+      "no": "073",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 3,
+      "constraint": "",
+      "note": "択こぼし ハサミ 右1",
+      "image": "assets/missions/073.jpg"
+    },
+    {
+      "no": "074",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 0,
+      "constraint": "",
+      "note": "単独 順押し 中2",
+      "image": "assets/missions/074.jpg"
+    },
+    {
+      "no": "075",
+      "rank": "A",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 6,
+      "constraint": "",
+      "note": "三択こぼし ハサミ推奨 全ビタ",
+      "image": "assets/missions/075.jpg"
+    },
+    {
+      "no": "076",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 0,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/076.jpg"
+    },
+    {
+      "no": "077",
+      "rank": "SS",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 12,
+      "constraint": "",
+      "note": "共通一枚青 順、ハサミ 0〜1、0〜2、0〜4",
+      "image": "assets/missions/077.jpg"
+    },
+    {
+      "no": "078",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 0,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/078.jpg"
+    },
+    {
+      "no": "079",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 3,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/079.jpg"
+    },
+    {
+      "no": "080",
+      "rank": "A",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 7,
+      "constraint": "",
+      "note": "C青、黒 ハサミ推奨 四コマ→三コマ→二コマ",
+      "image": "assets/missions/080.jpg"
+    },
+    {
+      "no": "081",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 4,
+      "constraint": "",
+      "note": "順押しビタ 黒成立後択こぼしならハサミで簡単",
+      "image": "assets/missions/081.jpg"
+    },
+    {
+      "no": "082",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 2,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/082.jpg"
+    },
+    {
+      "no": "083",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 3,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/083.jpg"
+    },
+    {
+      "no": "084",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 1,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/084.jpg"
+    },
+    {
+      "no": "085",
+      "rank": "A",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 0,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/085.jpg"
+    },
+    {
+      "no": "086",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 0,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/086.jpg"
+    },
+    {
+      "no": "087",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 3,
+      "constraint": "",
+      "note": "択こぼし",
+      "image": "assets/missions/087.jpg"
+    },
+    {
+      "no": "088",
+      "rank": "S",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 9,
+      "constraint": "",
+      "note": "三択こぼし 順押し推奨 ビタ→ビタ→一コマ",
+      "image": "assets/missions/088.jpg"
+    },
+    {
+      "no": "089",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 6,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/089.jpg"
+    },
+    {
+      "no": "090",
+      "rank": "A",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 8,
+      "constraint": "",
+      "note": "特リプ成立時限定 ハサミ推奨 二コマ→一コマ→二コマ 枠内黒バー図柄で楽",
+      "image": "assets/missions/090.jpg"
+    },
+    {
+      "no": "091",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 5,
+      "constraint": "",
+      "note": "単独 中は青上段 ハサミ押し",
+      "image": "assets/missions/091.jpg"
+    },
+    {
+      "no": "092",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 3,
+      "constraint": "",
+      "note": "択こぼし 順押し0-0-2(ゲチェナ)",
+      "image": "assets/missions/092.jpg"
+    },
+    {
+      "no": "093",
+      "rank": "A",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 3,
+      "constraint": "",
+      "note": "択ハサミ 0-0〜1-0〜3",
+      "image": "assets/missions/093.jpg"
+    },
+    {
+      "no": "094",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 3,
+      "constraint": "",
+      "note": "単独 挟み",
+      "image": "assets/missions/094.jpg"
+    },
+    {
+      "no": "095",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 4,
+      "constraint": "",
+      "note": "単独 挟み",
+      "image": "assets/missions/095.jpg"
+    },
+    {
+      "no": "096",
+      "rank": "NORMAL",
+      "left": "l",
+      "leftLabel": "スリス",
+      "variants": 7,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/096.jpg"
+    },
+    {
+      "no": "097",
+      "rank": "A",
+      "left": "l",
+      "leftLabel": "スリス",
+      "variants": 3,
+      "constraint": "",
+      "note": "単独 順4-2-4 中リールリホチェ",
+      "image": "assets/missions/097.jpg"
+    },
+    {
+      "no": "098",
+      "rank": "NORMAL",
+      "left": "l",
+      "leftLabel": "スリス",
+      "variants": 7,
+      "constraint": "",
+      "note": "単独黒 ハサミ左4赤下段右ビタ中4",
+      "image": "assets/missions/098.jpg"
+    },
+    {
+      "no": "099",
+      "rank": "S",
+      "left": "l",
+      "leftLabel": "スリス",
+      "variants": 14,
+      "constraint": "",
+      "note": "B赤頭 順、ハサミ 2→0→0",
+      "image": "assets/missions/099.jpg"
+    },
+    {
+      "no": "100",
+      "rank": "SS",
+      "left": "l",
+      "leftLabel": "スリス",
+      "variants": 14,
+      "constraint": "",
+      "note": "1枚B+赤頭成立時限定 2-0-Any",
+      "image": "assets/missions/100.jpg"
+    },
+    {
+      "no": "101",
+      "rank": "A",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 7,
+      "constraint": "",
+      "note": "左四コマ→中ビタで星一直線",
+      "image": "assets/missions/101.jpg"
+    },
+    {
+      "no": "102",
+      "rank": "NORMAL",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 7,
+      "constraint": "",
+      "note": "単独 順 4-2-3",
+      "image": "assets/missions/102.jpg"
+    },
+    {
+      "no": "103",
+      "rank": "NORMAL",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 9,
+      "constraint": "",
+      "note": "択順 0-0〜2-0〜1",
+      "image": "assets/missions/103.jpg"
+    },
+    {
+      "no": "104",
+      "rank": "NORMAL",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 7,
+      "constraint": "",
+      "note": "単独",
+      "image": "assets/missions/104.jpg"
+    },
+    {
+      "no": "105",
+      "rank": "A",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 14,
+      "constraint": "",
+      "note": "択 青以外 順 0,2,3→0→0",
+      "image": "assets/missions/105.jpg"
+    },
+    {
+      "no": "106",
+      "rank": "NORMAL",
+      "left": "a",
+      "leftLabel": "リホホ（枠下青7）",
+      "variants": 6,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/106.jpg"
+    },
+    {
+      "no": "107",
+      "rank": "NORMAL",
+      "left": "a",
+      "leftLabel": "リホホ（枠下青7）",
+      "variants": 3,
+      "constraint": "",
+      "note": "1枚D 挟みで赤枠上アバウトに狙うと簡単",
+      "image": "assets/missions/107.jpg"
+    },
+    {
+      "no": "108",
+      "rank": "A",
+      "left": "a",
+      "leftLabel": "リホホ（枠下青7）",
+      "variants": 1,
+      "constraint": "",
+      "note": "一枚D 右下段〜枠下赤7ビタ",
+      "image": "assets/missions/108.jpg"
+    },
+    {
+      "no": "109",
+      "rank": "NORMAL",
+      "left": "a",
+      "leftLabel": "リホホ（枠下青7）",
+      "variants": 3,
+      "constraint": "",
+      "note": "択こぼし 簡単 黒ビッグなら単独も可",
+      "image": "assets/missions/109.jpg"
+    },
+    {
+      "no": "110",
+      "rank": "A",
+      "left": "9",
+      "leftLabel": "ホリホ",
+      "variants": 0,
+      "constraint": "",
+      "note": "特リプだと0〜1コマ滑り 1枚役Dだと4コマ滑り",
+      "image": "assets/missions/110.jpg"
+    },
+    {
+      "no": "111",
+      "rank": "SS",
+      "left": "9",
+      "leftLabel": "ホリホ",
+      "variants": 6,
+      "constraint": "",
+      "note": "D青,黒 四コマ→挟んで一コマ→中二コマ",
+      "image": "assets/missions/111.jpg"
+    },
+    {
+      "no": "112",
+      "rank": "S",
+      "left": "9",
+      "leftLabel": "ホリホ",
+      "variants": 8,
+      "constraint": "",
+      "note": "特リプ青 ハサミ 0〜1→0〜2→2〜4",
+      "image": "assets/missions/112.jpg"
+    },
+    {
+      "no": "113",
+      "rank": "S",
+      "left": "8",
+      "leftLabel": "スリホ（赤青）",
+      "variants": 7,
+      "constraint": "",
+      "note": "1枚役D限定 青下段or枠下からの二・三コマ滑り→挟んでギザリプ青下段からの四コマ滑り→中リールは黒狙い",
+      "image": "assets/missions/113.jpg"
+    },
+    {
+      "no": "114",
+      "rank": "A",
+      "left": "8",
+      "leftLabel": "スリホ（赤青）",
+      "variants": 6,
+      "constraint": "",
+      "note": "択 赤頭以外 1→2→any",
+      "image": "assets/missions/114.jpg"
+    },
+    {
+      "no": "115",
+      "rank": "A",
+      "left": "7",
+      "leftLabel": "枠上赤7",
+      "variants": 5,
+      "constraint": "",
+      "note": "青7時リホホ狙い特リプ成立時に止まることも 単独青異色と赤択こぼし 挟んでホスホ止める 中4コマ滑らす 右上がり星揃いになる",
+      "image": "assets/missions/115.jpg"
+    },
+    {
+      "no": "116",
+      "rank": "NORMAL",
+      "left": "7",
+      "leftLabel": "枠上赤7",
+      "variants": 7,
+      "constraint": "",
+      "note": "特リプ",
+      "image": "assets/missions/116.jpg"
+    },
+    {
+      "no": "117",
+      "rank": "NORMAL",
+      "left": "3",
+      "leftLabel": "上段チェリー（黒赤）",
+      "variants": 1,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/117.jpg"
+    },
+    {
+      "no": "118",
+      "rank": "NORMAL",
+      "left": "3",
+      "leftLabel": "上段チェリー（黒赤）",
+      "variants": 1,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/118.jpg"
+    },
+    {
+      "no": "119",
+      "rank": "A",
+      "left": "2",
+      "leftLabel": "中段チェリー（黒赤）",
+      "variants": 2,
+      "constraint": "",
+      "note": "共通1枚役成立+青 3滑り(赤中段ビタのみ)",
+      "image": "assets/missions/119.jpg"
+    },
+    {
+      "no": "120",
+      "rank": "A",
+      "left": "1",
+      "leftLabel": "下段チェリー（黒赤）",
+      "variants": 7,
+      "constraint": "",
+      "note": "左スチェホ狙いで一コマ滑り→中リール中段青七狙いで三コマ滑り→右枠上バー狙い",
+      "image": "assets/missions/120.jpg"
+    },
+    {
+      "no": "121",
+      "rank": "NORMAL",
+      "left": "1",
+      "leftLabel": "下段チェリー（黒赤）",
+      "variants": 1,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/121.jpg"
+    },
+    {
+      "no": "122",
+      "rank": "NORMAL",
+      "left": "1",
+      "leftLabel": "下段チェリー（黒赤）",
+      "variants": 1,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/122.jpg"
+    },
+    {
+      "no": "123",
+      "rank": "NORMAL",
+      "left": "h",
+      "leftLabel": "上段チェリー（青黒）",
+      "variants": 3,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/123.jpg"
+    },
+    {
+      "no": "124",
+      "rank": "NORMAL",
+      "left": "h",
+      "leftLabel": "上段チェリー（青黒）",
+      "variants": 1,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/124.jpg"
+    },
+    {
+      "no": "125",
+      "rank": "A",
+      "left": "g",
+      "leftLabel": "中段チェリー（青黒）",
+      "variants": 1,
+      "constraint": "",
+      "note": "共通一枚役 赤 左黒中段ビタ3コマ滑り",
+      "image": "assets/missions/125.jpg"
+    },
+    {
+      "no": "126",
+      "rank": "NORMAL",
+      "left": "f",
+      "leftLabel": "下段チェリー（青黒）",
+      "variants": 2,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/126.jpg"
+    },
+    {
+      "no": "127",
+      "rank": "NORMAL",
+      "left": "f",
+      "leftLabel": "下段チェリー（青黒）",
+      "variants": 2,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/127.jpg"
+    },
+    {
+      "no": "128",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "三択こぼし 左、中ビタ",
+      "image": "assets/missions/128.jpg"
+    },
+    {
+      "no": "129",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 8,
+      "constraint": "順押し限定",
+      "note": "三択こぼし 順押しビタ、四コマ、一コマ",
+      "image": "assets/missions/129.jpg"
+    },
+    {
+      "no": "130",
+      "rank": "S",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 13,
+      "constraint": "順押し限定",
+      "note": "A黒 順 異色成立後 ビタ→四コマ→ビタ",
+      "image": "assets/missions/130.jpg"
+    },
+    {
+      "no": "131",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 2,
+      "constraint": "順押し限定",
+      "note": "10枚入賞 順押し限定 全ビタ",
+      "image": "assets/missions/131.jpg"
+    },
+    {
+      "no": "132",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 3,
+      "constraint": "順押し限定",
+      "note": "択 0-0〜2-0〜1",
+      "image": "assets/missions/132.jpg"
+    },
+    {
+      "no": "133",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "択こぼし0-0-0",
+      "image": "assets/missions/133.jpg"
+    },
+    {
+      "no": "134",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 8,
+      "constraint": "順押し限定",
+      "note": "単独 赤頭時2-2-4、青黒時0-1-4 択こぼしでも出ます中右ビタ気味 左がビタ止まりなら択 滑ってきたら単独 中は2番チェリーがおすすめ",
+      "image": "assets/missions/134.jpg"
+    },
+    {
+      "no": "135",
+      "rank": "A",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 8,
+      "constraint": "順押し限定",
+      "note": "青黒時択こぼし 0-0-0",
+      "image": "assets/missions/135.jpg"
+    },
+    {
+      "no": "136",
+      "rank": "A",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "択こぼし 中右ビタ",
+      "image": "assets/missions/136.jpg"
+    },
+    {
+      "no": "137",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 0,
+      "constraint": "順押し限定",
+      "note": "単独",
+      "image": "assets/missions/137.jpg"
+    },
+    {
+      "no": "138",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 9,
+      "constraint": "順押し限定",
+      "note": "択 順 0/0〜1/0〜1",
+      "image": "assets/missions/138.jpg"
+    },
+    {
+      "no": "139",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "10枚＋ 順押し限定 ビタ→二コマ→一コマ",
+      "image": "assets/missions/139.jpg"
+    },
+    {
+      "no": "140",
+      "rank": "S",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 9,
+      "constraint": "順押し限定",
+      "note": "単独異色orA赤 順 0→4→0〜1",
+      "image": "assets/missions/140.jpg"
+    },
+    {
+      "no": "141",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 3,
+      "constraint": "順押し限定",
+      "note": "単独 中2右4",
+      "image": "assets/missions/141.jpg"
+    },
+    {
+      "no": "142",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 6,
+      "constraint": "順押し限定",
+      "note": "三択こぼし 順押し限定 ビタ→二コマ→ビタ",
+      "image": "assets/missions/142.jpg"
+    },
+    {
+      "no": "143",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 10,
+      "constraint": "順押し限定",
+      "note": "単独 順押し限定 左、中ビタ",
+      "image": "assets/missions/143.jpg"
+    },
+    {
+      "no": "144",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 2,
+      "constraint": "順押し限定",
+      "note": "単独 中ビタ",
+      "image": "assets/missions/144.jpg"
+    },
+    {
+      "no": "145",
+      "rank": "A",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 6,
+      "constraint": "順押し限定",
+      "note": "単独 順押し限定 四コマ→一コマ→二コマ",
+      "image": "assets/missions/145.jpg"
+    },
+    {
+      "no": "146",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "10枚 順 中リール赤7上ホチェリのみ 4→1→1",
+      "image": "assets/missions/146.jpg"
+    },
+    {
+      "no": "147",
+      "rank": "S",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 14,
+      "constraint": "順押し限定",
+      "note": "D青 順 4→0〜3→3〜4",
+      "image": "assets/missions/147.jpg"
+    },
+    {
+      "no": "148",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 5,
+      "constraint": "順押し限定",
+      "note": "単独 順 3〜4→0〜1→2〜4",
+      "image": "assets/missions/148.jpg"
+    },
+    {
+      "no": "149",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 5,
+      "constraint": "順押し限定",
+      "note": "択 順 2→0→1",
+      "image": "assets/missions/149.jpg"
+    },
+    {
+      "no": "150",
+      "rank": "SS",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 18,
+      "constraint": "順押し限定",
+      "note": "D青 順 3〜4→0〜1→3〜4",
+      "image": "assets/missions/150.jpg"
+    },
+    {
+      "no": "151",
+      "rank": "A",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 3,
+      "constraint": "順押し限定",
+      "note": "REG時狙えば択こぼし 0-0-0",
+      "image": "assets/missions/151.jpg"
+    },
+    {
+      "no": "152",
+      "rank": "NORMAL",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 3,
+      "constraint": "順押し限定",
+      "note": "択 順 0-0-0",
+      "image": "assets/missions/152.jpg"
+    },
+    {
+      "no": "153",
+      "rank": "NORMAL",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 5,
+      "constraint": "順押し限定",
+      "note": "択 0→0or2",
+      "image": "assets/missions/153.jpg"
+    },
+    {
+      "no": "154",
+      "rank": "NORMAL",
+      "left": "b",
+      "leftLabel": "下段青7",
+      "variants": 1,
+      "constraint": "順押し限定",
+      "note": "中234",
+      "image": "assets/missions/154.jpg"
+    },
+    {
+      "no": "155",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 1,
+      "constraint": "順押し限定",
+      "note": "",
+      "image": "assets/missions/155.jpg"
+    },
+    {
+      "no": "156",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 0,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/156.jpg"
+    },
+    {
+      "no": "157",
+      "rank": "A",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "単独 中0右4(枠上青)",
+      "image": "assets/missions/157.jpg"
+    },
+    {
+      "no": "158",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 2,
+      "constraint": "順押し限定",
+      "note": "単独で出ます",
+      "image": "assets/missions/158.jpg"
+    },
+    {
+      "no": "159",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "10枚＋ 順押し限定 左一コマ→中リール赤七上（枠下下）のホチェリ→ビタ",
+      "image": "assets/missions/159.jpg"
+    },
+    {
+      "no": "160",
+      "rank": "SS",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 17,
+      "constraint": "順押し限定",
+      "note": "C＋黒限定 オールビタ",
+      "image": "assets/missions/160.jpg"
+    },
+    {
+      "no": "161",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "三択こぼし 順押し 四コマ→二コマ",
+      "image": "assets/missions/161.jpg"
+    },
+    {
+      "no": "162",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 0,
+      "constraint": "順押し限定",
+      "note": "",
+      "image": "assets/missions/162.jpg"
+    },
+    {
+      "no": "163",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 2,
+      "constraint": "順押し限定",
+      "note": "",
+      "image": "assets/missions/163.jpg"
+    },
+    {
+      "no": "164",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "三択こぼし 全ビタ 中リール枠下下赤七→右リール青七",
+      "image": "assets/missions/164.jpg"
+    },
+    {
+      "no": "165",
+      "rank": "S",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 15,
+      "constraint": "順押し限定",
+      "note": "1枚役D青限定",
+      "image": "assets/missions/165.jpg"
+    },
+    {
+      "no": "166",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 4,
+      "constraint": "",
+      "note": "",
+      "image": "assets/missions/166.jpg"
+    },
+    {
+      "no": "167",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 3,
+      "constraint": "順押し限定",
+      "note": "単独 順押し 右赤上中？",
+      "image": "assets/missions/167.jpg"
+    },
+    {
+      "no": "168",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "0-0-0〜4",
+      "image": "assets/missions/168.jpg"
+    },
+    {
+      "no": "169",
+      "rank": "NORMAL",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 3,
+      "constraint": "順押し限定",
+      "note": "単独 AT中ペラポン等 三コマ→ビタ→四コマ",
+      "image": "assets/missions/169.jpg"
+    },
+    {
+      "no": "170",
+      "rank": "A",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 7,
+      "constraint": "順押し限定",
+      "note": "三択こぼし 順押し限定",
+      "image": "assets/missions/170.jpg"
+    },
+    {
+      "no": "171",
+      "rank": "A",
+      "left": "a",
+      "leftLabel": "リホホ（枠下青7）",
+      "variants": 8,
+      "constraint": "順押し限定",
+      "note": "単独 順押し限定 ビタから二コマ滑り→中リール赤七枠下から二コマ滑りorビタ→上段黒バーから四コマ滑り 中・右リール一コマ余裕あり",
+      "image": "assets/missions/171.jpg"
+    },
+    {
+      "no": "172",
+      "rank": "A",
+      "left": "7",
+      "leftLabel": "枠上赤7",
+      "variants": 9,
+      "constraint": "順押し限定",
+      "note": "3-1-4",
+      "image": "assets/missions/172.jpg"
+    },
+    {
+      "no": "173",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 6,
+      "constraint": "ハサミ打ち限定",
+      "note": "共通1枚限定 ハサミ限定 三コマ以内→挟んでビタ→二コマホバーチェ狙い",
+      "image": "assets/missions/173.jpg"
+    },
+    {
+      "no": "174",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 2,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独",
+      "image": "assets/missions/174.jpg"
+    },
+    {
+      "no": "175",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 11,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独 ハサミ限定 ビタ→挟んで一コマ→中リール三コマ",
+      "image": "assets/missions/175.jpg"
+    },
+    {
+      "no": "176",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 6,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独 ハサミ限定 ビタ→挟んで二コマ滑り→中リール二コマ滑り",
+      "image": "assets/missions/176.jpg"
+    },
+    {
+      "no": "177",
+      "rank": "A",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 9,
+      "constraint": "ハサミ打ち限定",
+      "note": "V 赤ビッグ 択こぼし 左かなり引き込む 中ビタ 右赤中下",
+      "image": "assets/missions/177.jpg"
+    },
+    {
+      "no": "178",
+      "rank": "NORMAL",
+      "left": "6",
+      "leftLabel": "上段赤7",
+      "variants": 3,
+      "constraint": "ハサミ打ち限定",
+      "note": "三択こぼし ハサミ限定 全ビタ",
+      "image": "assets/missions/178.jpg"
+    },
+    {
+      "no": "179",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 3,
+      "constraint": "ハサミ打ち限定",
+      "note": "択こぼし 右ビタ",
+      "image": "assets/missions/179.jpg"
+    },
+    {
+      "no": "180",
+      "rank": "SS",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 12,
+      "constraint": "ハサミ打ち限定",
+      "note": "A青黒 0-0-0~4",
+      "image": "assets/missions/180.jpg"
+    },
+    {
+      "no": "181",
+      "rank": "A",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 2,
+      "constraint": "ハサミ打ち限定",
+      "note": "一枚役A成立時限定 ビタ→挟んで二コマ滑り→ビタ",
+      "image": "assets/missions/181.jpg"
+    },
+    {
+      "no": "182",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 8,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 0-0〜2-0〜1",
+      "image": "assets/missions/182.jpg"
+    },
+    {
+      "no": "183",
+      "rank": "S",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 4,
+      "constraint": "ハサミ打ち限定",
+      "note": "択こぼし 0-0〜1,3-0〜1",
+      "image": "assets/missions/183.jpg"
+    },
+    {
+      "no": "184",
+      "rank": "NORMAL",
+      "left": "5",
+      "leftLabel": "中段赤7",
+      "variants": 5,
+      "constraint": "ハサミ打ち限定",
+      "note": "択こぼし 中ビタ",
+      "image": "assets/missions/184.jpg"
+    },
+    {
+      "no": "185",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 3,
+      "constraint": "ハサミ打ち限定",
+      "note": "三択こぼし ハサミ限定 ビタ→挟んでビタ→三コマ滑り",
+      "image": "assets/missions/185.jpg"
+    },
+    {
+      "no": "186",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 2,
+      "constraint": "ハサミ打ち限定",
+      "note": "10枚＋ ハサミ限定 ビタ→一コマ→ビタ",
+      "image": "assets/missions/186.jpg"
+    },
+    {
+      "no": "187",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 7,
+      "constraint": "ハサミ打ち限定",
+      "note": "ハサミ限定 ビタ→挟んでビタ→一コマ滑り",
+      "image": "assets/missions/187.jpg"
+    },
+    {
+      "no": "188",
+      "rank": "A",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 5,
+      "constraint": "ハサミ打ち限定",
+      "note": "特リプ限定 下段ビタor中段から一コマ滑り→ハサミで一コマ滑り",
+      "image": "assets/missions/188.jpg"
+    },
+    {
+      "no": "189",
+      "rank": "NORMAL",
+      "left": "4",
+      "leftLabel": "下段赤7",
+      "variants": 5,
+      "constraint": "ハサミ打ち限定",
+      "note": "共通1枚成立時限定 ハサミ限定",
+      "image": "assets/missions/189.jpg"
+    },
+    {
+      "no": "190",
+      "rank": "S",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 13,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 ハサミ 2→0〜1→0〜2",
+      "image": "assets/missions/190.jpg"
+    },
+    {
+      "no": "191",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 2,
+      "constraint": "ハサミ打ち限定",
+      "note": "10枚＋ 二コマ→一コマ→二コマ",
+      "image": "assets/missions/191.jpg"
+    },
+    {
+      "no": "192",
+      "rank": "A",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 9,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 ハサミ 2→0→2〜4",
+      "image": "assets/missions/192.jpg"
+    },
+    {
+      "no": "193",
+      "rank": "SS",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 8,
+      "constraint": "ハサミ打ち限定",
+      "note": "B青黒 ハサミ 4→3〜4→1以外",
+      "image": "assets/missions/193.jpg"
+    },
+    {
+      "no": "194",
+      "rank": "A",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 8,
+      "constraint": "ハサミ打ち限定",
+      "note": "特リプ 0~1,4-0~2-0~2",
+      "image": "assets/missions/194.jpg"
+    },
+    {
+      "no": "195",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 5,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 ハサミ 2-0〜2-0〜2",
+      "image": "assets/missions/195.jpg"
+    },
+    {
+      "no": "196",
+      "rank": "NORMAL",
+      "left": "d",
+      "leftLabel": "上段青7",
+      "variants": 4,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 ハサミ 2→0〜1→0",
+      "image": "assets/missions/196.jpg"
+    },
+    {
+      "no": "197",
+      "rank": "NORMAL",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 1,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独 ハサミ 2→0〜1",
+      "image": "assets/missions/197.jpg"
+    },
+    {
+      "no": "198",
+      "rank": "A",
+      "left": "c",
+      "leftLabel": "中段青7",
+      "variants": 9,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 ハサミ 0→2〜4→2",
+      "image": "assets/missions/198.jpg"
+    },
+    {
+      "no": "199",
+      "rank": "NORMAL",
+      "left": "b",
+      "leftLabel": "下段青7",
+      "variants": 1,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独",
+      "image": "assets/missions/199.jpg"
+    },
+    {
+      "no": "200",
+      "rank": "NORMAL",
+      "left": "b",
+      "leftLabel": "下段青7",
+      "variants": 2,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独 ビタ→ビタ→二コマ",
+      "image": "assets/missions/200.jpg"
+    },
+    {
+      "no": "201",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 3,
+      "constraint": "ハサミ打ち限定",
+      "note": "",
+      "image": "assets/missions/201.jpg"
+    },
+    {
+      "no": "202",
+      "rank": "A",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 2,
+      "constraint": "ハサミ打ち限定",
+      "note": "共通一枚",
+      "image": "assets/missions/202.jpg"
+    },
+    {
+      "no": "203",
+      "rank": "NORMAL",
+      "left": "k",
+      "leftLabel": "上段黒BAR",
+      "variants": 4,
+      "constraint": "ハサミ打ち限定",
+      "note": "択こぼし 簡単",
+      "image": "assets/missions/203.jpg"
+    },
+    {
+      "no": "204",
+      "rank": "NORMAL",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 4,
+      "constraint": "ハサミ打ち限定",
+      "note": "三択こぼし ビタor三コマ滑り以外→挟んでビタ→一コマ",
+      "image": "assets/missions/204.jpg"
+    },
+    {
+      "no": "205",
+      "rank": "S",
+      "left": "j",
+      "leftLabel": "中段黒BAR",
+      "variants": 4,
+      "constraint": "順押し限定",
+      "note": "三択こぼし 左ビタ→ビタ→二コマ滑り",
+      "image": "assets/missions/205.jpg"
+    },
+    {
+      "no": "206",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 0,
+      "constraint": "ハサミ打ち限定",
+      "note": "",
+      "image": "assets/missions/206.jpg"
+    },
+    {
+      "no": "207",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 4,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 0-0〜2-0〜1",
+      "image": "assets/missions/207.jpg"
+    },
+    {
+      "no": "208",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 6,
+      "constraint": "ハサミ打ち限定",
+      "note": "三択こぼし 全ビタ",
+      "image": "assets/missions/208.jpg"
+    },
+    {
+      "no": "209",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 2,
+      "constraint": "ハサミ打ち限定",
+      "note": "三択こぼし ビタ→一コマ→ビタ",
+      "image": "assets/missions/209.jpg"
+    },
+    {
+      "no": "210",
+      "rank": "A",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 12,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 ハサミ 0→0〜1→0〜3",
+      "image": "assets/missions/210.jpg"
+    },
+    {
+      "no": "211",
+      "rank": "A",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 3,
+      "constraint": "ハサミ打ち限定",
+      "note": "共通１枚 ハサミ 0→0〜2→0〜4",
+      "image": "assets/missions/211.jpg"
+    },
+    {
+      "no": "212",
+      "rank": "NORMAL",
+      "left": "i",
+      "leftLabel": "下段黒BAR",
+      "variants": 9,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独 赤頭 中2",
+      "image": "assets/missions/212.jpg"
+    },
+    {
+      "no": "213",
+      "rank": "NORMAL",
+      "left": "l",
+      "leftLabel": "スリス",
+      "variants": 1,
+      "constraint": "ハサミ打ち限定",
+      "note": "",
+      "image": "assets/missions/213.jpg"
+    },
+    {
+      "no": "214",
+      "rank": "NORMAL",
+      "left": "l",
+      "leftLabel": "スリス",
+      "variants": 1,
+      "constraint": "ハサミ打ち限定",
+      "note": "",
+      "image": "assets/missions/214.jpg"
+    },
+    {
+      "no": "215",
+      "rank": "A",
+      "left": "a",
+      "leftLabel": "リホホ（枠下青7）",
+      "variants": 9,
+      "constraint": "ハサミ打ち限定",
+      "note": "D青黒 ハサミ 4→3〜4→4",
+      "image": "assets/missions/215.jpg"
+    },
+    {
+      "no": "216",
+      "rank": "NORMAL",
+      "left": "a",
+      "leftLabel": "リホホ（枠下青7）",
+      "variants": 17,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独 四コマ滑りからビタ→ビタ→四コマ 中リール下段赤七狙い",
+      "image": "assets/missions/216.jpg"
+    },
+    {
+      "no": "217",
+      "rank": "A",
+      "left": "8",
+      "leftLabel": "スリホ（赤青）",
+      "variants": 8,
+      "constraint": "ハサミ打ち限定",
+      "note": "1枚D成立時限定 青枠下から二コマ滑りorビタ→挟んで下段赤から一コマ→枠下赤から一コマ滑り",
+      "image": "assets/missions/217.jpg"
+    },
+    {
+      "no": "218",
+      "rank": "NORMAL",
+      "left": "7",
+      "leftLabel": "枠上赤7",
+      "variants": 7,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独青 ハサミ 2〜3→3→3",
+      "image": "assets/missions/218.jpg"
+    },
+    {
+      "no": "219",
+      "rank": "NORMAL",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 5,
+      "constraint": "ハサミ打ち限定",
+      "note": "",
+      "image": "assets/missions/219.jpg"
+    },
+    {
+      "no": "220",
+      "rank": "A",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 6,
+      "constraint": "ハサミ打ち限定",
+      "note": "単独 ハサミ限定 四コマ→一コマ→三コマ",
+      "image": "assets/missions/220.jpg"
+    },
+    {
+      "no": "221",
+      "rank": "S",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 8,
+      "constraint": "ハサミ打ち限定",
+      "note": "択 ハサミ 0→0〜1→0〜2",
+      "image": "assets/missions/221.jpg"
+    },
+    {
+      "no": "222",
+      "rank": "SS",
+      "left": "e",
+      "leftLabel": "枠上青7",
+      "variants": 18,
+      "constraint": "ハサミ打ち限定",
+      "note": "D青 ハサミ 4→0〜2→4",
+      "image": "assets/missions/222.jpg"
+    }
+  ]
+}

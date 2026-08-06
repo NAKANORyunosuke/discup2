@@ -1,0 +1,3882 @@
+{
+  "source": "assets/missions/*.jpg",
+  "sourceVersion": "20220502-01",
+  "total": 222,
+  "symbolLabels": {
+    "red": "赤7",
+    "blue": "青7",
+    "black": "黒BAR",
+    "cherry": "チェリー",
+    "watermelon": "スイカ",
+    "replay": "リプレイ",
+    "star": "星"
+  },
+  "reelWindows": {
+    "left": [
+      [
+        "watermelon",
+        "cherry",
+        "star"
+      ],
+      [
+        "replay",
+        "watermelon",
+        "cherry"
+      ],
+      [
+        "watermelon",
+        "replay",
+        "watermelon"
+      ],
+      [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      [
+        "replay",
+        "star",
+        "black"
+      ],
+      [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      [
+        "replay",
+        "cherry",
+        "replay"
+      ],
+      [
+        "star",
+        "replay",
+        "cherry"
+      ],
+      [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      [
+        "star",
+        "star",
+        "blue"
+      ],
+      [
+        "replay",
+        "star",
+        "star"
+      ],
+      [
+        "star",
+        "replay",
+        "star"
+      ],
+      [
+        "replay",
+        "watermelon",
+        "star"
+      ],
+      [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      [
+        "cherry",
+        "star",
+        "watermelon"
+      ]
+    ],
+    "middle": [
+      [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      [
+        "watermelon",
+        "replay",
+        "star"
+      ],
+      [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      [
+        "black",
+        "cherry",
+        "replay"
+      ],
+      [
+        "star",
+        "black",
+        "cherry"
+      ],
+      [
+        "star",
+        "star",
+        "black"
+      ],
+      [
+        "replay",
+        "star",
+        "star"
+      ],
+      [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      [
+        "star",
+        "red",
+        "cherry"
+      ],
+      [
+        "replay",
+        "star",
+        "red"
+      ]
+    ],
+    "right": [
+      [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      [
+        "star",
+        "watermelon",
+        "star"
+      ],
+      [
+        "replay",
+        "star",
+        "watermelon"
+      ],
+      [
+        "blue",
+        "replay",
+        "star"
+      ],
+      [
+        "watermelon",
+        "blue",
+        "replay"
+      ],
+      [
+        "star",
+        "watermelon",
+        "blue"
+      ],
+      [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      [
+        "watermelon",
+        "cherry",
+        "replay"
+      ],
+      [
+        "black",
+        "watermelon",
+        "cherry"
+      ],
+      [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      [
+        "replay",
+        "star",
+        "black"
+      ],
+      [
+        "replay",
+        "watermelon",
+        "blue"
+      ],
+      [
+        "star",
+        "replay",
+        "watermelon"
+      ],
+      [
+        "red",
+        "watermelon",
+        "star"
+      ],
+      [
+        "cherry",
+        "red",
+        "watermelon"
+      ],
+      [
+        "replay",
+        "cherry",
+        "red"
+      ],
+      [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    ]
+  },
+  "reelSequences": {
+    "left": [
+      "star",
+      "cherry",
+      "watermelon",
+      "replay",
+      "watermelon",
+      "black",
+      "star",
+      "replay",
+      "cherry",
+      "replay",
+      "star",
+      "watermelon",
+      "blue",
+      "star",
+      "star",
+      "replay",
+      "star",
+      "watermelon",
+      "replay",
+      "red",
+      "watermelon"
+    ],
+    "middle": [
+      "replay",
+      "cherry",
+      "star",
+      "replay",
+      "watermelon",
+      "blue",
+      "cherry",
+      "star",
+      "replay",
+      "cherry",
+      "black",
+      "star",
+      "star",
+      "replay",
+      "cherry",
+      "star",
+      "replay",
+      "watermelon",
+      "cherry",
+      "red",
+      "star"
+    ],
+    "right": [
+      "replay",
+      "star",
+      "watermelon",
+      "star",
+      "replay",
+      "blue",
+      "watermelon",
+      "star",
+      "replay",
+      "cherry",
+      "watermelon",
+      "black",
+      "star",
+      "replay",
+      "blue",
+      "watermelon",
+      "replay",
+      "star",
+      "watermelon",
+      "red",
+      "cherry"
+    ]
+  },
+  "patterns": {
+    "001": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "002": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "003": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "004": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "005": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "006": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "watermelon"
+      ]
+    },
+    "007": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "008": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "009": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "010": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "011": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "012": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "013": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "014": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "015": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "016": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "black",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "red",
+        "watermelon",
+        "star"
+      ]
+    },
+    "017": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": null
+    },
+    "018": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": null
+    },
+    "019": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "020": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "021": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "022": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "023": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "024": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "025": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "026": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "027": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "028": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": null
+    },
+    "029": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "030": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "watermelon",
+        "cherry",
+        "replay"
+      ]
+    },
+    "031": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "032": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "033": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "034": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": [
+        "replay",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "035": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "036": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "037": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": null
+    },
+    "038": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "black",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "039": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "watermelon",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "040": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "041": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "042": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "043": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "044": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "045": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "046": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "047": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "watermelon"
+      ]
+    },
+    "048": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "watermelon",
+        "star",
+        "replay"
+      ]
+    },
+    "049": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "watermelon",
+        "star",
+        "replay"
+      ]
+    },
+    "050": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "051": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "052": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "053": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "054": {
+      "left": [
+        "star",
+        "star",
+        "blue"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "055": {
+      "left": [
+        "star",
+        "star",
+        "blue"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "056": {
+      "left": [
+        "star",
+        "star",
+        "blue"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": null
+    },
+    "057": {
+      "left": [
+        "star",
+        "star",
+        "blue"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": null
+    },
+    "058": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": null,
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "059": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "060": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "061": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "062": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "063": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "064": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "065": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "066": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "red",
+        "watermelon",
+        "star"
+      ]
+    },
+    "067": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "red",
+        "watermelon",
+        "star"
+      ]
+    },
+    "068": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "069": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "070": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "071": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "072": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "073": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "074": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": null
+    },
+    "075": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "076": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "077": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "watermelon"
+      ]
+    },
+    "078": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "079": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "watermelon",
+        "cherry",
+        "replay"
+      ]
+    },
+    "080": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "watermelon",
+        "cherry",
+        "replay"
+      ]
+    },
+    "081": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "082": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "083": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "084": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "085": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "086": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": null
+    },
+    "087": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": null
+    },
+    "088": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "089": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "090": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "091": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "092": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": [
+        "watermelon",
+        "star",
+        "replay"
+      ]
+    },
+    "093": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "watermelon"
+      ]
+    },
+    "094": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "red",
+        "watermelon",
+        "star"
+      ]
+    },
+    "095": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "red",
+        "watermelon",
+        "star"
+      ]
+    },
+    "096": {
+      "left": [
+        "watermelon",
+        "replay",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "097": {
+      "left": [
+        "watermelon",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "098": {
+      "left": [
+        "watermelon",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "099": {
+      "left": [
+        "watermelon",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "100": {
+      "left": [
+        "watermelon",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": null
+    },
+    "101": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": null
+    },
+    "102": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "103": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "104": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "watermelon",
+        "star",
+        "replay"
+      ]
+    },
+    "105": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "106": {
+      "left": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "right": null
+    },
+    "107": {
+      "left": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "middle": [
+        "black",
+        "cherry",
+        "replay"
+      ],
+      "right": null
+    },
+    "108": {
+      "left": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "middle": null,
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "109": {
+      "left": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "watermelon",
+        "star",
+        "replay"
+      ]
+    },
+    "110": {
+      "left": [
+        "star",
+        "replay",
+        "star"
+      ],
+      "middle": null,
+      "right": null
+    },
+    "111": {
+      "left": [
+        "star",
+        "replay",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "112": {
+      "left": [
+        "star",
+        "replay",
+        "star"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "113": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": null,
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "114": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": null
+    },
+    "115": {
+      "left": [
+        "replay",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": null
+    },
+    "116": {
+      "left": [
+        "replay",
+        "watermelon",
+        "star"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "117": {
+      "left": [
+        "cherry",
+        "star",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "118": {
+      "left": [
+        "cherry",
+        "star",
+        "watermelon"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": null
+    },
+    "119": {
+      "left": [
+        "watermelon",
+        "cherry",
+        "star"
+      ],
+      "middle": null,
+      "right": null
+    },
+    "120": {
+      "left": [
+        "replay",
+        "watermelon",
+        "cherry"
+      ],
+      "middle": null,
+      "right": [
+        "watermelon",
+        "cherry",
+        "replay"
+      ]
+    },
+    "121": {
+      "left": [
+        "replay",
+        "watermelon",
+        "cherry"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "122": {
+      "left": [
+        "replay",
+        "watermelon",
+        "cherry"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": null
+    },
+    "123": {
+      "left": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "124": {
+      "left": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": null
+    },
+    "125": {
+      "left": [
+        "replay",
+        "cherry",
+        "replay"
+      ],
+      "middle": null,
+      "right": null
+    },
+    "126": {
+      "left": [
+        "star",
+        "replay",
+        "cherry"
+      ],
+      "middle": null,
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "127": {
+      "left": [
+        "star",
+        "replay",
+        "cherry"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": null
+    },
+    "128": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": null
+    },
+    "129": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "130": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "131": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "132": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "black",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "133": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "134": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "135": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "136": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "137": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": null
+    },
+    "138": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "watermelon",
+        "star",
+        "replay"
+      ]
+    },
+    "139": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "140": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "141": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "red"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "142": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "143": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": null
+    },
+    "144": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": null
+    },
+    "145": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "146": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "147": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "watermelon",
+        "cherry",
+        "replay"
+      ]
+    },
+    "148": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "149": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "150": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "151": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "152": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "153": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": null
+    },
+    "154": {
+      "left": [
+        "star",
+        "star",
+        "blue"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": null
+    },
+    "155": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": null
+    },
+    "156": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": null
+    },
+    "157": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "158": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "159": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "160": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "161": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": null
+    },
+    "162": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": null
+    },
+    "163": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": null
+    },
+    "164": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "165": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "red",
+        "watermelon",
+        "star"
+      ]
+    },
+    "166": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": null
+    },
+    "167": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "168": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "169": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "170": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "171": {
+      "left": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "172": {
+      "left": [
+        "replay",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "blue",
+        "watermelon",
+        "replay"
+      ],
+      "right": [
+        "watermelon",
+        "cherry",
+        "replay"
+      ]
+    },
+    "173": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "174": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "175": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "176": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "blue"
+      ]
+    },
+    "177": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "178": {
+      "left": [
+        "red",
+        "replay",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "179": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": null,
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "180": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "181": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "cherry",
+        "red"
+      ]
+    },
+    "182": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "183": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "black",
+        "watermelon",
+        "cherry"
+      ]
+    },
+    "184": {
+      "left": [
+        "watermelon",
+        "red",
+        "replay"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "185": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "186": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "187": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "188": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "black",
+        "watermelon"
+      ]
+    },
+    "189": {
+      "left": [
+        "star",
+        "watermelon",
+        "red"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "190": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "black",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    },
+    "191": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "192": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "193": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "star",
+        "black",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "194": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "195": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "196": {
+      "left": [
+        "blue",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "197": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "star",
+        "replay",
+        "watermelon"
+      ]
+    },
+    "198": {
+      "left": [
+        "star",
+        "blue",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "199": {
+      "left": [
+        "star",
+        "star",
+        "blue"
+      ],
+      "middle": null,
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "200": {
+      "left": [
+        "star",
+        "star",
+        "blue"
+      ],
+      "middle": [
+        "star",
+        "red",
+        "cherry"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "201": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "202": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "203": {
+      "left": [
+        "black",
+        "watermelon",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "cherry",
+        "replay",
+        "star"
+      ]
+    },
+    "204": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "205": {
+      "left": [
+        "star",
+        "black",
+        "watermelon"
+      ],
+      "middle": [
+        "star",
+        "star",
+        "black"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "206": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": null,
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "207": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "208": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": [
+        "watermelon",
+        "star",
+        "replay"
+      ]
+    },
+    "209": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "replay"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "210": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "red",
+        "cherry",
+        "watermelon"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "211": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "watermelon",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "black"
+      ]
+    },
+    "212": {
+      "left": [
+        "replay",
+        "star",
+        "black"
+      ],
+      "middle": [
+        "star",
+        "cherry",
+        "blue"
+      ],
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "213": {
+      "left": [
+        "watermelon",
+        "replay",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "214": {
+      "left": [
+        "watermelon",
+        "replay",
+        "watermelon"
+      ],
+      "middle": null,
+      "right": [
+        "watermelon",
+        "cherry",
+        "replay"
+      ]
+    },
+    "215": {
+      "left": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "216": {
+      "left": [
+        "replay",
+        "star",
+        "star"
+      ],
+      "middle": [
+        "watermelon",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "replay",
+        "star",
+        "watermelon"
+      ]
+    },
+    "217": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "replay",
+        "cherry"
+      ]
+    },
+    "218": {
+      "left": [
+        "replay",
+        "watermelon",
+        "star"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "219": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": null,
+      "right": [
+        "blue",
+        "replay",
+        "star"
+      ]
+    },
+    "220": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "replay",
+        "star"
+      ],
+      "right": [
+        "cherry",
+        "red",
+        "watermelon"
+      ]
+    },
+    "221": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "replay",
+        "star",
+        "cherry"
+      ],
+      "right": [
+        "star",
+        "watermelon",
+        "star"
+      ]
+    },
+    "222": {
+      "left": [
+        "watermelon",
+        "star",
+        "replay"
+      ],
+      "middle": [
+        "cherry",
+        "blue",
+        "watermelon"
+      ],
+      "right": [
+        "watermelon",
+        "blue",
+        "replay"
+      ]
+    }
+  },
+  "validation": {
+    "imageSize": [
+      462,
+      242
+    ],
+    "leftPatternsVerified": 222,
+    "wildcardColumns": 64,
+    "minimumConfidenceGap": 7.563
+  }
+}
