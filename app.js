@@ -18,6 +18,8 @@ const REEL_COLUMNS = {
 const REEL_REPEAT_COUNT = 9;
 const REEL_CENTER_REPEAT = Math.floor(REEL_REPEAT_COUNT / 2);
 const REEL_SETTLE_DELAY = 140;
+const WHEEL_PIXEL_NOTCH = 100;
+const TRACKPAD_STEP_THRESHOLD = 40;
 const ROW_LABELS = ["上", "中", "下"];
 const RANK_COLORS = {
   NORMAL: "#aeb6c5",
@@ -126,6 +128,9 @@ let searchFrame = null;
 const reelScrollTimers = { left: null, middle: null, right: null };
 const reelProgrammaticTimers = { left: null, middle: null, right: null };
 const reelProgrammaticScroll = { left: false, middle: false, right: false };
+const reelWheelTargets = { left: null, middle: null, right: null };
+const reelWheelRemainders = { left: 0, middle: 0, right: 0 };
+const reelWheelResetTimers = { left: null, middle: null, right: null };
 
 const filters = {
   query: "",
@@ -432,6 +437,10 @@ function settleScrolledReel(reel) {
   const index = patternIndexForWindow(reel, pattern);
   if (index < 0) return;
 
+  reelWheelTargets[reel] = null;
+  reelWheelRemainders[reel] = 0;
+  window.clearTimeout(reelWheelResetTimers[reel]);
+
   filters.pattern[reel] = index;
   elements.patternSelects[reel].value = String(index);
   updatePatternWindowLabel(reel);
@@ -469,6 +478,60 @@ function scrollPatternReelByOne(reel, direction, behavior = "smooth") {
   });
 }
 
+function wheelStepsForReel(reel, event) {
+  const direction = Math.sign(event.deltaY);
+  if (!direction) return 0;
+
+  if (
+    reelWheelRemainders[reel] &&
+    Math.sign(reelWheelRemainders[reel]) !== direction
+  ) {
+    reelWheelRemainders[reel] = 0;
+  }
+
+  if (event.deltaMode === 1) {
+    return direction * Math.max(1, Math.round(Math.abs(event.deltaY) / 3));
+  }
+  if (event.deltaMode === 2) return direction;
+
+  if (Math.abs(event.deltaY) >= TRACKPAD_STEP_THRESHOLD) {
+    reelWheelRemainders[reel] = 0;
+    return direction * Math.max(
+      1,
+      Math.round(Math.abs(event.deltaY) / WHEEL_PIXEL_NOTCH),
+    );
+  }
+
+  reelWheelRemainders[reel] += event.deltaY;
+  const steps = Math.trunc(
+    reelWheelRemainders[reel] / TRACKPAD_STEP_THRESHOLD,
+  );
+  reelWheelRemainders[reel] -= steps * TRACKPAD_STEP_THRESHOLD;
+  return steps;
+}
+
+function scrollPatternReelByWheel(reel, event) {
+  const steps = wheelStepsForReel(reel, event);
+  window.clearTimeout(reelWheelResetTimers[reel]);
+  reelWheelResetTimers[reel] = window.setTimeout(function () {
+    reelWheelTargets[reel] = null;
+    reelWheelRemainders[reel] = 0;
+  }, 520);
+  if (!steps) return;
+
+  const container = elements.patternWindows[reel];
+  const cellHeight = reelCellHeight(reel);
+  if (!cellHeight) return;
+  const currentTarget = Number.isInteger(reelWheelTargets[reel])
+    ? reelWheelTargets[reel]
+    : Math.round(container.scrollTop / cellHeight);
+  reelWheelTargets[reel] = currentTarget + steps;
+  container.scrollTo({
+    top: reelWheelTargets[reel] * cellHeight,
+    behavior: "smooth",
+  });
+}
+
 function buildPatternReel(reel) {
   const container = elements.patternWindows[reel];
   const sequence = reelDisplaySequence(reel);
@@ -495,8 +558,18 @@ function buildPatternReel(reel) {
     window.clearTimeout(reelProgrammaticTimers[reel]);
   }
 
-  container.addEventListener("wheel", releaseProgrammaticScroll, { passive: true });
-  container.addEventListener("pointerdown", releaseProgrammaticScroll);
+  container.addEventListener("wheel", function (event) {
+    if (!event.deltaY || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
+    event.preventDefault();
+    releaseProgrammaticScroll();
+    scrollPatternReelByWheel(reel, event);
+  }, { passive: false });
+  container.addEventListener("pointerdown", function () {
+    releaseProgrammaticScroll();
+    reelWheelTargets[reel] = null;
+    reelWheelRemainders[reel] = 0;
+    window.clearTimeout(reelWheelResetTimers[reel]);
+  });
 
   container.addEventListener("scroll", function () {
     if (reelProgrammaticScroll[reel]) return;

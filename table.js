@@ -7,6 +7,8 @@ const LEGACY_TABLE_PREFERENCES_STORAGE_KEY = "diskup2-control-table:v1";
 const CONTROL_REEL_REPEAT_COUNT = 9;
 const CONTROL_REEL_CENTER_REPEAT = Math.floor(CONTROL_REEL_REPEAT_COUNT / 2);
 const CONTROL_REEL_SETTLE_DELAY = 140;
+const WHEEL_PIXEL_NOTCH = 100;
+const TRACKPAD_STEP_THRESHOLD = 40;
 
 // The control table numbers the symbol stopped on the lower row. The mission
 // list groups the same 21 reel positions by its own left-position codes.
@@ -86,6 +88,9 @@ let controlReelScrollTimer = null;
 let controlReelProgrammaticTimer = null;
 let controlReelIndicatorFrame = null;
 let controlReelProgrammaticScroll = false;
+let controlReelWheelTarget = null;
+let controlReelWheelRemainder = 0;
+let controlReelWheelResetTimer = null;
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, function (character) {
@@ -201,6 +206,59 @@ function positiveModulo(value, divisor) {
   return ((value % divisor) + divisor) % divisor;
 }
 
+function controlReelWheelSteps(event) {
+  const direction = Math.sign(event.deltaY);
+  if (!direction) return 0;
+
+  if (
+    controlReelWheelRemainder &&
+    Math.sign(controlReelWheelRemainder) !== direction
+  ) {
+    controlReelWheelRemainder = 0;
+  }
+
+  if (event.deltaMode === 1) {
+    return direction * Math.max(1, Math.round(Math.abs(event.deltaY) / 3));
+  }
+  if (event.deltaMode === 2) return direction;
+
+  if (Math.abs(event.deltaY) >= TRACKPAD_STEP_THRESHOLD) {
+    controlReelWheelRemainder = 0;
+    return direction * Math.max(
+      1,
+      Math.round(Math.abs(event.deltaY) / WHEEL_PIXEL_NOTCH),
+    );
+  }
+
+  controlReelWheelRemainder += event.deltaY;
+  const steps = Math.trunc(
+    controlReelWheelRemainder / TRACKPAD_STEP_THRESHOLD,
+  );
+  controlReelWheelRemainder -= steps * TRACKPAD_STEP_THRESHOLD;
+  return steps;
+}
+
+function scrollControlReelByWheel(event) {
+  const steps = controlReelWheelSteps(event);
+  window.clearTimeout(controlReelWheelResetTimer);
+  controlReelWheelResetTimer = window.setTimeout(function () {
+    controlReelWheelTarget = null;
+    controlReelWheelRemainder = 0;
+  }, 520);
+  if (!steps) return;
+
+  const cellHeight = controlReelCellHeight();
+  if (!cellHeight) return;
+  const currentTarget = Number.isInteger(controlReelWheelTarget)
+    ? controlReelWheelTarget
+    : Math.round(elements.controlReelWindow.scrollTop / cellHeight);
+  controlReelWheelTarget = currentTarget + steps;
+  elements.controlReelWindow.scrollTo({
+    top: controlReelWheelTarget * cellHeight,
+    behavior: "smooth",
+  });
+}
+
 function controlReelPosition() {
   const sequence = controlReelSequence();
   const cellHeight = controlReelCellHeight();
@@ -259,6 +317,10 @@ function settleControlReel() {
     : position.rawIndex;
   const targetTop = targetIndex * position.cellHeight;
 
+  controlReelWheelTarget = null;
+  controlReelWheelRemainder = 0;
+  window.clearTimeout(controlReelWheelResetTimer);
+
   elements.controlReelWindow.classList.remove("is-scrolling");
   selectPattern(position.stop.number, selectedSlipNumber, false, false);
   updateControlReelValue(position.stop);
@@ -304,15 +366,18 @@ function buildControlReel() {
     window.clearTimeout(controlReelProgrammaticTimer);
   }
 
-  elements.controlReelWindow.addEventListener(
-    "wheel",
-    releaseProgrammaticScroll,
-    { passive: true },
-  );
-  elements.controlReelWindow.addEventListener(
-    "pointerdown",
-    releaseProgrammaticScroll,
-  );
+  elements.controlReelWindow.addEventListener("wheel", function (event) {
+    if (!event.deltaY || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
+    event.preventDefault();
+    releaseProgrammaticScroll();
+    scrollControlReelByWheel(event);
+  }, { passive: false });
+  elements.controlReelWindow.addEventListener("pointerdown", function () {
+    releaseProgrammaticScroll();
+    controlReelWheelTarget = null;
+    controlReelWheelRemainder = 0;
+    window.clearTimeout(controlReelWheelResetTimer);
+  });
 
   elements.controlReelWindow.addEventListener("scroll", function () {
     if (controlReelProgrammaticScroll) return;
