@@ -15,6 +15,9 @@ const REEL_COLUMNS = {
   middle: 1,
   right: 2,
 };
+const REEL_REPEAT_COUNT = 9;
+const REEL_CENTER_REPEAT = Math.floor(REEL_REPEAT_COUNT / 2);
+const REEL_SETTLE_DELAY = 140;
 const ROW_LABELS = ["上", "中", "下"];
 const RANK_COLORS = {
   NORMAL: "#aeb6c5",
@@ -123,8 +126,6 @@ let searchFrame = null;
 const reelScrollTimers = { left: null, middle: null, right: null };
 const reelProgrammaticTimers = { left: null, middle: null, right: null };
 const reelProgrammaticScroll = { left: false, middle: false, right: false };
-const reelWheelTimers = { left: null, middle: null, right: null };
-const reelWheelActive = { left: false, middle: false, right: false };
 
 const filters = {
   query: "",
@@ -399,7 +400,7 @@ function scrollReelToPattern(reel, index, behavior = "smooth") {
   reelProgrammaticScroll[reel] = true;
   window.clearTimeout(reelProgrammaticTimers[reel]);
   container.scrollTo({
-    top: (sequence.length * 2 + start) * cellHeight,
+    top: (sequence.length * REEL_CENTER_REPEAT + start) * cellHeight,
     behavior,
   });
   reelProgrammaticTimers[reel] = window.setTimeout(function () {
@@ -436,23 +437,23 @@ function settleScrolledReel(reel) {
   updatePatternWindowLabel(reel);
   container.classList.remove("is-scrolling");
 
-  const snappedTop = rawIndex * cellHeight;
+  const localIndex = ((rawIndex % sequence.length) + sequence.length) % sequence.length;
+  const needsRecentering = rawIndex < sequence.length * 2 ||
+    rawIndex >= sequence.length * (REEL_REPEAT_COUNT - 2);
+  const targetIndex = needsRecentering
+    ? sequence.length * REEL_CENTER_REPEAT + localIndex
+    : rawIndex;
+  const snappedTop = targetIndex * cellHeight;
   if (Math.abs(container.scrollTop - snappedTop) > 0.5) {
     reelProgrammaticScroll[reel] = true;
-    container.scrollTo({ top: snappedTop, behavior: "smooth" });
+    container.scrollTo({
+      top: snappedTop,
+      behavior: needsRecentering ? "auto" : "smooth",
+    });
     window.clearTimeout(reelProgrammaticTimers[reel]);
     reelProgrammaticTimers[reel] = window.setTimeout(function () {
       reelProgrammaticScroll[reel] = false;
-    }, 260);
-  }
-
-  if (rawIndex < sequence.length || rawIndex >= sequence.length * 4) {
-    reelProgrammaticScroll[reel] = true;
-    container.scrollTop = (sequence.length * 2 + sequenceIndex) * cellHeight;
-    window.clearTimeout(reelProgrammaticTimers[reel]);
-    reelProgrammaticTimers[reel] = window.setTimeout(function () {
-      reelProgrammaticScroll[reel] = false;
-    }, 80);
+    }, needsRecentering ? 80 : 300);
   }
   renderMissions();
 }
@@ -472,7 +473,7 @@ function buildPatternReel(reel) {
   const container = elements.patternWindows[reel];
   const sequence = reelDisplaySequence(reel);
   const symbols = [];
-  for (let copy = 0; copy < 5; copy += 1) {
+  for (let copy = 0; copy < REEL_REPEAT_COUNT; copy += 1) {
     sequence.forEach(function (symbol) {
       symbols.push([
         '<span class="pattern-reel-scroll-symbol" aria-hidden="true">',
@@ -489,30 +490,26 @@ function buildPatternReel(reel) {
   ].join("");
   updatePatternWindowLabel(reel);
 
+  function releaseProgrammaticScroll() {
+    reelProgrammaticScroll[reel] = false;
+    window.clearTimeout(reelProgrammaticTimers[reel]);
+  }
+
+  container.addEventListener("wheel", releaseProgrammaticScroll, { passive: true });
+  container.addEventListener("pointerdown", releaseProgrammaticScroll);
+
   container.addEventListener("scroll", function () {
     if (reelProgrammaticScroll[reel]) return;
     container.classList.add("is-scrolling");
     window.clearTimeout(reelScrollTimers[reel]);
     reelScrollTimers[reel] = window.setTimeout(function () {
       settleScrolledReel(reel);
-    }, 150);
+    }, REEL_SETTLE_DELAY);
   });
-  container.addEventListener("wheel", function (event) {
-    if (!event.deltaY || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
-    event.preventDefault();
-
-    window.clearTimeout(reelWheelTimers[reel]);
-    reelWheelTimers[reel] = window.setTimeout(function () {
-      reelWheelActive[reel] = false;
-    }, 120);
-
-    if (reelWheelActive[reel] || reelProgrammaticScroll[reel]) return;
-    reelWheelActive[reel] = true;
-    scrollPatternReelByOne(reel, Math.sign(event.deltaY), "auto");
-  }, { passive: false });
   container.addEventListener("keydown", function (event) {
     if (event.key !== "ArrowUp" && event.key !== "ArrowDown") return;
     event.preventDefault();
+    releaseProgrammaticScroll();
     scrollPatternReelByOne(reel, event.key === "ArrowDown" ? 1 : -1);
   });
 

@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#090b10" />
     <title>DISC UP 2 — Reach Mission</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260813-1" />
   </head>
   <body>
     <a class="skip-link" href="#mission-grid">ミッション一覧へ移動</a>
@@ -158,7 +158,7 @@
 
           <div class="pattern-search-body">
             <p class="pattern-search-help">
-              図柄部分を直接上下にスクロールしてください。スマートフォンではそのままスワイプできます。
+              図柄部分はホイール量やスワイプに合わせて無段階に回転し、手を止めると最寄りの停止形で確定します。
               分からないリールは「未指定」で検索対象から外せ、画像の「Any」はどの停止形にも一致します。
             </p>
 
@@ -173,7 +173,7 @@
                 </div>
                 <div class="pattern-reel-scroll-hint" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="m8 7 4-4 4 4M12 3v18m-4-4 4 4 4-4" /></svg>
-                  上下にスクロール
+                  無段階スクロール
                 </div>
                 <div class="pattern-reel-window" id="pattern-left-window" tabindex="0" role="region" aria-live="polite"></div>
                 <label class="pattern-select-wrap" for="pattern-left-select">
@@ -195,7 +195,7 @@
                 </div>
                 <div class="pattern-reel-scroll-hint" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="m8 7 4-4 4 4M12 3v18m-4-4 4 4 4-4" /></svg>
-                  上下にスクロール
+                  無段階スクロール
                 </div>
                 <div class="pattern-reel-window" id="pattern-middle-window" tabindex="0" role="region" aria-live="polite"></div>
                 <label class="pattern-select-wrap" for="pattern-middle-select">
@@ -217,7 +217,7 @@
                 </div>
                 <div class="pattern-reel-scroll-hint" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="m8 7 4-4 4 4M12 3v18m-4-4 4 4 4-4" /></svg>
-                  上下にスクロール
+                  無段階スクロール
                 </div>
                 <div class="pattern-reel-window" id="pattern-right-window" tabindex="0" role="region" aria-live="polite"></div>
                 <label class="pattern-select-wrap" for="pattern-right-select">
@@ -401,6 +401,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <noscript>このページを利用するにはJavaScriptを有効にしてください。</noscript>
-    <script type="module" src="app.js?v=20260807-2"></script>
+    <script type="module" src="app.js?v=20260813-2"></script>
   </body>
 </html>

@@ -450,6 +450,200 @@
   padding: 20px;
 }
 
+.control-reel-help {
+  margin: -3px 0 12px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.control-reel-help strong {
+  color: #ff7181;
+}
+
+.control-reel-frame {
+  --control-reel-cell-height: 68px;
+  position: relative;
+  max-width: 258px;
+  margin: 0 auto;
+}
+
+.control-reel-window {
+  position: relative;
+  height: calc(var(--control-reel-cell-height) * 3 + 4px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 2px solid #343b49;
+  border-radius: 11px;
+  background: #e8e9e5;
+  box-shadow:
+    inset 0 0 20px rgba(0, 0, 0, 0.15),
+    0 10px 25px rgba(0, 0, 0, 0.26);
+  cursor: grab;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  scroll-snap-type: none;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.control-reel-window::-webkit-scrollbar {
+  display: none;
+}
+
+.control-reel-window:active {
+  cursor: grabbing;
+}
+
+.control-reel-track {
+  display: block;
+  transform: translateZ(0);
+  transition: filter 120ms ease;
+}
+
+.control-reel-window.is-scrolling .control-reel-track {
+  filter: blur(0.55px);
+}
+
+.control-reel-symbol {
+  display: grid;
+  height: var(--control-reel-cell-height);
+  grid-template-columns: minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px 4px 14px;
+  border-bottom: 1px solid rgba(24, 29, 40, 0.2);
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.035), transparent 28%, transparent 72%, rgba(0, 0, 0, 0.035)),
+    #f2f2ed;
+  color: #171a21;
+}
+
+.control-reel-symbol-art {
+  position: relative;
+  display: block;
+  width: min(116px, 100%);
+  justify-self: center;
+  overflow: hidden;
+  aspect-ratio: 86 / 50;
+  background: #fff;
+  pointer-events: none;
+}
+
+.control-reel-symbol-art img {
+  position: absolute;
+  top: -186%;
+  left: -90.7%;
+  display: block;
+  width: 430.24%;
+  max-width: none;
+  height: auto;
+  pointer-events: none;
+}
+
+.control-reel-symbol-meta {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+}
+
+.control-reel-symbol-meta strong {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.control-reel-symbol-meta small {
+  max-width: 46px;
+  overflow: hidden;
+  color: #6b7079;
+  font-size: 9px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.control-reel-bottom-guide {
+  position: absolute;
+  z-index: 3;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  height: var(--control-reel-cell-height);
+  border-top: 2px solid rgba(255, 64, 84, 0.9);
+  border-bottom: 2px solid rgba(255, 64, 84, 0.9);
+  background: linear-gradient(90deg, rgba(255, 64, 84, 0.09), transparent 24%, transparent 76%, rgba(255, 64, 84, 0.09));
+  box-shadow: 0 0 18px rgba(255, 64, 84, 0.13);
+  pointer-events: none;
+}
+
+.control-reel-bottom-guide small {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 3px 5px;
+  border-radius: 4px;
+  background: var(--red);
+  color: #fff;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.control-reel-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 38px;
+  margin: 8px 0 0;
+  color: var(--muted-2);
+  font-size: 9px;
+}
+
+.control-reel-value strong {
+  color: var(--text);
+  font-size: 12px;
+}
+
+.stop-number-picker {
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.stop-number-picker summary {
+  display: flex;
+  min-height: 43px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  padding: 0 11px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.stop-number-picker summary::-webkit-details-marker {
+  display: none;
+}
+
+.stop-number-picker summary svg {
+  width: 14px;
+  transition: transform 150ms ease;
+}
+
+.stop-number-picker[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.stop-number-picker .stop-grid {
+  padding: 10px;
+  border-top: 1px solid var(--line);
+}
+
 .panel-label {
   display: flex;
   align-items: center;
@@ -1535,6 +1729,10 @@
     position: static;
   }
 
+  .control-reel-help {
+    text-align: center;
+  }
+
   .stop-grid {
     grid-template-columns: repeat(7, 1fr);
   }
@@ -1757,6 +1955,10 @@
 
   .stop-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .control-reel-frame {
+    --control-reel-cell-height: 64px;
   }
 
   .stop-button {

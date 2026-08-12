@@ -857,7 +857,7 @@ svg {
   cursor: grab;
   overscroll-behavior: contain;
   scrollbar-width: none;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: none;
   touch-action: pan-y;
   user-select: none;
 }
@@ -891,8 +891,6 @@ svg {
     linear-gradient(90deg, rgba(0, 0, 0, 0.035), transparent 25%, transparent 75%, rgba(0, 0, 0, 0.035)),
     #f2f2ed;
   color: #171a21;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .pattern-reel-scroll-symbol:last-child {

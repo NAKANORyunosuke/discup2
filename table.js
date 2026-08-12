@@ -4,6 +4,9 @@ const MISSION_STATE_STORAGE_KEY = "discup2-reach-mission:v1";
 const LEGACY_MISSION_STATE_STORAGE_KEY = "diskup2-reach-mission:v1";
 const TABLE_PREFERENCES_STORAGE_KEY = "discup2-control-table:v1";
 const LEGACY_TABLE_PREFERENCES_STORAGE_KEY = "diskup2-control-table:v1";
+const CONTROL_REEL_REPEAT_COUNT = 9;
+const CONTROL_REEL_CENTER_REPEAT = Math.floor(CONTROL_REEL_REPEAT_COUNT / 2);
+const CONTROL_REEL_SETTLE_DELAY = 140;
 
 // The control table numbers the symbol stopped on the lower row. The mission
 // list groups the same 21 reel positions by its own left-position codes.
@@ -33,6 +36,8 @@ const RESULT_STOP_TO_MISSION_LEFT = Object.freeze({
 
 const elements = {
   stopGrid: document.querySelector("#stop-grid"),
+  controlReelWindow: document.querySelector("#control-reel-window"),
+  controlReelBottomValue: document.querySelector("#control-reel-bottom-value"),
   selectedCircled: document.querySelector("#selected-circled"),
   selectedSymbol: document.querySelector("#selected-symbol"),
   selectedStopImage: document.querySelector("#selected-stop-image"),
@@ -77,6 +82,10 @@ let selectedStopNumber = 1;
 let selectedSlipNumber = 0;
 let searchFrame = null;
 let toastTimer = null;
+let controlReelScrollTimer = null;
+let controlReelProgrammaticTimer = null;
+let controlReelIndicatorFrame = null;
+let controlReelProgrammaticScroll = false;
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, function (character) {
@@ -175,6 +184,165 @@ function currentStop() {
 
 function currentSlip() {
   return currentStop().slips[selectedSlipNumber];
+}
+
+function controlReelSequence() {
+  return tableData.stops.slice().reverse();
+}
+
+function controlReelCellHeight() {
+  const cell = elements.controlReelWindow.querySelector(".control-reel-symbol");
+  return cell
+    ? cell.getBoundingClientRect().height
+    : elements.controlReelWindow.clientHeight / 3;
+}
+
+function positiveModulo(value, divisor) {
+  return ((value % divisor) + divisor) % divisor;
+}
+
+function controlReelPosition() {
+  const sequence = controlReelSequence();
+  const cellHeight = controlReelCellHeight();
+  if (!cellHeight) return null;
+  const rawIndex = Math.round(elements.controlReelWindow.scrollTop / cellHeight);
+  const localStartIndex = positiveModulo(rawIndex, sequence.length);
+  const bottomIndex = positiveModulo(rawIndex + 2, sequence.length);
+  return {
+    cellHeight,
+    rawIndex,
+    localStartIndex,
+    stop: sequence[bottomIndex],
+  };
+}
+
+function updateControlReelValue(stop) {
+  if (!stop) return;
+  elements.controlReelBottomValue.textContent =
+    stop.circled + "番 " + stop.symbol;
+  elements.controlReelWindow.setAttribute(
+    "aria-label",
+    "左リール：下段 " + stop.circled + "番 " + stop.symbol,
+  );
+}
+
+function scrollControlReelToStop(stopNumber, behavior = "smooth") {
+  const sequence = controlReelSequence();
+  const bottomIndex = sequence.findIndex(function (stop) {
+    return stop.number === Number(stopNumber);
+  });
+  const cellHeight = controlReelCellHeight();
+  if (bottomIndex < 0 || !cellHeight) return;
+  const topIndex = positiveModulo(bottomIndex - 2, sequence.length);
+
+  controlReelProgrammaticScroll = true;
+  elements.controlReelWindow.classList.remove("is-scrolling");
+  window.clearTimeout(controlReelProgrammaticTimer);
+  elements.controlReelWindow.scrollTo({
+    top: (sequence.length * CONTROL_REEL_CENTER_REPEAT + topIndex) * cellHeight,
+    behavior,
+  });
+  updateControlReelValue(stopByNumber(stopNumber));
+  controlReelProgrammaticTimer = window.setTimeout(function () {
+    controlReelProgrammaticScroll = false;
+  }, behavior === "smooth" ? 520 : 80);
+}
+
+function settleControlReel() {
+  const position = controlReelPosition();
+  if (!position) return;
+  const sequence = controlReelSequence();
+  const needsRecentering = position.rawIndex < sequence.length * 2 ||
+    position.rawIndex >= sequence.length * (CONTROL_REEL_REPEAT_COUNT - 2);
+  const targetIndex = needsRecentering
+    ? sequence.length * CONTROL_REEL_CENTER_REPEAT + position.localStartIndex
+    : position.rawIndex;
+  const targetTop = targetIndex * position.cellHeight;
+
+  elements.controlReelWindow.classList.remove("is-scrolling");
+  selectPattern(position.stop.number, selectedSlipNumber, false, false);
+  updateControlReelValue(position.stop);
+
+  if (Math.abs(elements.controlReelWindow.scrollTop - targetTop) > 0.5) {
+    controlReelProgrammaticScroll = true;
+    window.clearTimeout(controlReelProgrammaticTimer);
+    elements.controlReelWindow.scrollTo({
+      top: targetTop,
+      behavior: needsRecentering ? "auto" : "smooth",
+    });
+    controlReelProgrammaticTimer = window.setTimeout(function () {
+      controlReelProgrammaticScroll = false;
+    }, needsRecentering ? 80 : 300);
+  }
+}
+
+function controlReelSymbolMarkup(stop) {
+  return [
+    '<span class="control-reel-symbol" aria-hidden="true">',
+    '<span class="control-reel-symbol-art">',
+    '<img src="', escapeHtml(stop.image), '" alt="" draggable="false" />',
+    "</span>",
+    '<span class="control-reel-symbol-meta"><strong>', stop.circled,
+    '</strong><small>', escapeHtml(stop.symbol), "</small></span>",
+    "</span>",
+  ].join("");
+}
+
+function buildControlReel() {
+  const sequence = controlReelSequence();
+  const symbols = [];
+  for (let copy = 0; copy < CONTROL_REEL_REPEAT_COUNT; copy += 1) {
+    sequence.forEach(function (stop) {
+      symbols.push(controlReelSymbolMarkup(stop));
+    });
+  }
+  elements.controlReelWindow.innerHTML =
+    '<span class="control-reel-track">' + symbols.join("") + "</span>";
+
+  function releaseProgrammaticScroll() {
+    controlReelProgrammaticScroll = false;
+    window.clearTimeout(controlReelProgrammaticTimer);
+  }
+
+  elements.controlReelWindow.addEventListener(
+    "wheel",
+    releaseProgrammaticScroll,
+    { passive: true },
+  );
+  elements.controlReelWindow.addEventListener(
+    "pointerdown",
+    releaseProgrammaticScroll,
+  );
+
+  elements.controlReelWindow.addEventListener("scroll", function () {
+    if (controlReelProgrammaticScroll) return;
+    elements.controlReelWindow.classList.add("is-scrolling");
+    window.cancelAnimationFrame(controlReelIndicatorFrame);
+    controlReelIndicatorFrame = window.requestAnimationFrame(function () {
+      const position = controlReelPosition();
+      if (position) updateControlReelValue(position.stop);
+    });
+    window.clearTimeout(controlReelScrollTimer);
+    controlReelScrollTimer = window.setTimeout(
+      settleControlReel,
+      CONTROL_REEL_SETTLE_DELAY,
+    );
+  });
+
+  elements.controlReelWindow.addEventListener("keydown", function (event) {
+    if (event.key !== "ArrowUp" && event.key !== "ArrowDown") return;
+    event.preventDefault();
+    releaseProgrammaticScroll();
+    const cellHeight = controlReelCellHeight();
+    elements.controlReelWindow.scrollBy({
+      top: (event.key === "ArrowDown" ? 1 : -1) * cellHeight,
+      behavior: "smooth",
+    });
+  });
+
+  window.requestAnimationFrame(function () {
+    scrollControlReelToStop(selectedStopNumber, "auto");
+  });
 }
 
 function parseInitialSelection() {
@@ -351,6 +519,7 @@ function renderSelectedStop() {
   elements.selectedSymbol.textContent = "左リール：" + stop.symbol;
   elements.selectedStopImage.src = stop.image;
   elements.selectedStopImage.alt = stop.heading + "の押下位置";
+  updateControlReelValue(stop);
 }
 
 function renderExplorer() {
@@ -361,10 +530,11 @@ function renderExplorer() {
   updateLocation();
 }
 
-function selectPattern(stopNumber, slipNumber, scroll) {
+function selectPattern(stopNumber, slipNumber, scroll, syncReel = true) {
   selectedStopNumber = Math.min(21, Math.max(1, Number(stopNumber)));
   selectedSlipNumber = Math.min(4, Math.max(0, Number(slipNumber)));
   renderExplorer();
+  if (syncReel) scrollControlReelToStop(selectedStopNumber);
   if (scroll) {
     elements.workspace.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -560,6 +730,7 @@ async function initialize() {
     parseInitialSelection();
     renderNotes();
     renderExplorer();
+    buildControlReel();
   } catch (error) {
     console.error(error);
     elements.stopGrid.innerHTML =
