@@ -844,8 +844,9 @@ svg {
 
 .pattern-reel-window {
   --reel-cell-height: 64px;
+  --reel-peek: 12px;
   position: relative;
-  height: calc(var(--reel-cell-height) * 3 + 4px);
+  height: calc(var(--reel-cell-height) * 3 + var(--reel-peek) * 2 + 4px);
   overflow-x: hidden;
   overflow-y: auto;
   border: 2px solid #343b49;
@@ -907,6 +908,7 @@ svg {
   height: 0;
   grid-template-rows: repeat(3, var(--reel-cell-height));
   pointer-events: none;
+  transform: translateY(var(--reel-peek));
 }
 
 .pattern-row-markers small {
@@ -2195,7 +2197,8 @@ footer a {
 
   .pattern-reel-window {
     --reel-cell-height: 50px;
-    height: calc(var(--reel-cell-height) * 3 + 2px);
+    --reel-peek: 8px;
+    height: calc(var(--reel-cell-height) * 3 + var(--reel-peek) * 2 + 2px);
     border-width: 1px;
     border-radius: 7px;
   }

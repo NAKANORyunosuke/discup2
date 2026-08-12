@@ -202,6 +202,14 @@ function controlReelCellHeight() {
     : elements.controlReelWindow.clientHeight / 3;
 }
 
+function controlReelPeekOffset() {
+  return parseFloat(
+    getComputedStyle(elements.controlReelWindow).getPropertyValue(
+      "--control-reel-peek",
+    ),
+  ) || 0;
+}
+
 function positiveModulo(value, divisor) {
   return ((value % divisor) + divisor) % divisor;
 }
@@ -248,13 +256,16 @@ function scrollControlReelByWheel(event) {
   if (!steps) return;
 
   const cellHeight = controlReelCellHeight();
+  const peekOffset = controlReelPeekOffset();
   if (!cellHeight) return;
   const currentTarget = Number.isInteger(controlReelWheelTarget)
     ? controlReelWheelTarget
-    : Math.round(elements.controlReelWindow.scrollTop / cellHeight);
+    : Math.round(
+      (elements.controlReelWindow.scrollTop + peekOffset) / cellHeight,
+    );
   controlReelWheelTarget = currentTarget + steps;
   elements.controlReelWindow.scrollTo({
-    top: controlReelWheelTarget * cellHeight,
+    top: controlReelWheelTarget * cellHeight - peekOffset,
     behavior: "smooth",
   });
 }
@@ -262,8 +273,11 @@ function scrollControlReelByWheel(event) {
 function controlReelPosition() {
   const sequence = controlReelSequence();
   const cellHeight = controlReelCellHeight();
+  const peekOffset = controlReelPeekOffset();
   if (!cellHeight) return null;
-  const rawIndex = Math.round(elements.controlReelWindow.scrollTop / cellHeight);
+  const rawIndex = Math.round(
+    (elements.controlReelWindow.scrollTop + peekOffset) / cellHeight,
+  );
   const localStartIndex = positiveModulo(rawIndex, sequence.length);
   const bottomIndex = positiveModulo(rawIndex + 2, sequence.length);
   return {
@@ -290,6 +304,7 @@ function scrollControlReelToStop(stopNumber, behavior = "smooth") {
     return stop.number === Number(stopNumber);
   });
   const cellHeight = controlReelCellHeight();
+  const peekOffset = controlReelPeekOffset();
   if (bottomIndex < 0 || !cellHeight) return;
   const topIndex = positiveModulo(bottomIndex - 2, sequence.length);
 
@@ -297,7 +312,8 @@ function scrollControlReelToStop(stopNumber, behavior = "smooth") {
   elements.controlReelWindow.classList.remove("is-scrolling");
   window.clearTimeout(controlReelProgrammaticTimer);
   elements.controlReelWindow.scrollTo({
-    top: (sequence.length * CONTROL_REEL_CENTER_REPEAT + topIndex) * cellHeight,
+    top: (sequence.length * CONTROL_REEL_CENTER_REPEAT + topIndex) * cellHeight -
+      peekOffset,
     behavior,
   });
   updateControlReelValue(stopByNumber(stopNumber));
@@ -315,7 +331,7 @@ function settleControlReel() {
   const targetIndex = needsRecentering
     ? sequence.length * CONTROL_REEL_CENTER_REPEAT + position.localStartIndex
     : position.rawIndex;
-  const targetTop = targetIndex * position.cellHeight;
+  const targetTop = targetIndex * position.cellHeight - controlReelPeekOffset();
 
   controlReelWheelTarget = null;
   controlReelWheelRemainder = 0;

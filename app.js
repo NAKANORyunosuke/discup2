@@ -372,6 +372,12 @@ function reelCellHeight(reel) {
   return cell ? cell.getBoundingClientRect().height : container.clientHeight / 3;
 }
 
+function reelPeekOffset(reel) {
+  return parseFloat(
+    getComputedStyle(elements.patternWindows[reel]).getPropertyValue("--reel-peek"),
+  ) || 0;
+}
+
 function updatePatternWindowLabel(reel) {
   const container = elements.patternWindows[reel];
   const pattern = selectedPattern(reel);
@@ -400,12 +406,13 @@ function scrollReelToPattern(reel, index, behavior = "smooth") {
     ]);
   });
   const cellHeight = reelCellHeight(reel);
+  const peekOffset = reelPeekOffset(reel);
   if (start < 0 || !cellHeight) return;
 
   reelProgrammaticScroll[reel] = true;
   window.clearTimeout(reelProgrammaticTimers[reel]);
   container.scrollTo({
-    top: (sequence.length * REEL_CENTER_REPEAT + start) * cellHeight,
+    top: (sequence.length * REEL_CENTER_REPEAT + start) * cellHeight - peekOffset,
     behavior,
   });
   reelProgrammaticTimers[reel] = window.setTimeout(function () {
@@ -425,9 +432,10 @@ function settleScrolledReel(reel) {
   const container = elements.patternWindows[reel];
   const sequence = reelDisplaySequence(reel);
   const cellHeight = reelCellHeight(reel);
+  const peekOffset = reelPeekOffset(reel);
   if (!cellHeight) return;
 
-  const rawIndex = Math.round(container.scrollTop / cellHeight);
+  const rawIndex = Math.round((container.scrollTop + peekOffset) / cellHeight);
   const sequenceIndex = ((rawIndex % sequence.length) + sequence.length) % sequence.length;
   const pattern = [
     sequence[sequenceIndex],
@@ -452,7 +460,7 @@ function settleScrolledReel(reel) {
   const targetIndex = needsRecentering
     ? sequence.length * REEL_CENTER_REPEAT + localIndex
     : rawIndex;
-  const snappedTop = targetIndex * cellHeight;
+  const snappedTop = targetIndex * cellHeight - peekOffset;
   if (Math.abs(container.scrollTop - snappedTop) > 0.5) {
     reelProgrammaticScroll[reel] = true;
     container.scrollTo({
@@ -470,10 +478,11 @@ function settleScrolledReel(reel) {
 function scrollPatternReelByOne(reel, direction, behavior = "smooth") {
   const container = elements.patternWindows[reel];
   const cellHeight = reelCellHeight(reel);
+  const peekOffset = reelPeekOffset(reel);
   if (!cellHeight) return;
-  const currentIndex = Math.round(container.scrollTop / cellHeight);
+  const currentIndex = Math.round((container.scrollTop + peekOffset) / cellHeight);
   container.scrollTo({
-    top: (currentIndex + direction) * cellHeight,
+    top: (currentIndex + direction) * cellHeight - peekOffset,
     behavior,
   });
 }
@@ -521,13 +530,14 @@ function scrollPatternReelByWheel(reel, event) {
 
   const container = elements.patternWindows[reel];
   const cellHeight = reelCellHeight(reel);
+  const peekOffset = reelPeekOffset(reel);
   if (!cellHeight) return;
   const currentTarget = Number.isInteger(reelWheelTargets[reel])
     ? reelWheelTargets[reel]
-    : Math.round(container.scrollTop / cellHeight);
+    : Math.round((container.scrollTop + peekOffset) / cellHeight);
   reelWheelTargets[reel] = currentTarget + steps;
   container.scrollTo({
-    top: reelWheelTargets[reel] * cellHeight,
+    top: reelWheelTargets[reel] * cellHeight - peekOffset,
     behavior: "smooth",
   });
 }

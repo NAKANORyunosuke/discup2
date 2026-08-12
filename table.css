@@ -463,14 +463,16 @@
 
 .control-reel-frame {
   --control-reel-cell-height: 68px;
+  --control-reel-peek: 12px;
   position: relative;
   max-width: 258px;
   margin: 0 auto;
 }
 
 .control-reel-window {
+  --control-reel-peek: inherit;
   position: relative;
-  height: calc(var(--control-reel-cell-height) * 3 + 4px);
+  height: calc(var(--control-reel-cell-height) * 3 + var(--control-reel-peek) * 2 + 4px);
   overflow-x: hidden;
   overflow-y: auto;
   border: 2px solid #343b49;
@@ -566,7 +568,7 @@
   position: absolute;
   z-index: 3;
   right: 2px;
-  bottom: 2px;
+  bottom: calc(var(--control-reel-peek) + 2px);
   left: 2px;
   height: var(--control-reel-cell-height);
   border-top: 2px solid rgba(255, 64, 84, 0.9);
@@ -1959,6 +1961,7 @@
 
   .control-reel-frame {
     --control-reel-cell-height: 64px;
+    --control-reel-peek: 8px;
   }
 
   .stop-button {
